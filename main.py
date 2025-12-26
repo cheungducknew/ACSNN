@@ -51,6 +51,7 @@ def main(args):
 if __name__ == '__main__':
 
     args = Args().params
+    print(args)
     
     random_seed = args['RANDOM_SEED']
     torch.manual_seed(random_seed)
