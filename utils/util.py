@@ -7,6 +7,14 @@ from sklearn import metrics
 import matplotlib.pyplot as plt
 from torch.nn import functional as F
 
+# Add regression metrics
+from sklearn.metrics import mean_squared_error, r2_score
+try:
+    from scipy.stats import pearsonr, spearmanr
+    _HAS_SCIPY = True
+except Exception:
+    _HAS_SCIPY = False
+
 def plotROC(y, z, pstr=''):
     fpr, tpr, tt = metrics.roc_curve(y, z)
     roc_auc = roc_auc_score(y, z)
@@ -18,6 +26,7 @@ def plotROC(y, z, pstr=''):
     plt.title('ROC ' + pstr + ' AUC: '+str(roc_auc_score(y, z)))
 
 
+# keep existing classification helpers if desired
 def evaluate_metrics(y, y_pred, y_proba, draw_roc=False):
 
     tn, fp, fn, tp = confusion_matrix(y, y_pred).ravel()
@@ -34,50 +43,21 @@ def evaluate_metrics(y, y_pred, y_proba, draw_roc=False):
     return tn, fp, fn, tp, round(ba, 3), round(tpr, 3), round(tnr, 3), round(f1, 3), round(auc, 3)
 
 
-def print_metrics(y_proba, y_actual):
-    
-    # arr_len = len(y_proba_arr)
-    thresholds = np.linspace(0.01, 0.99, 99)
-    best_ba, best_tpr, best_tnr, best_f1, best_mcc, best_auc = 0, 0, 0, 0, 0, 0
-
-    for threshold in thresholds:
-        total_ba, total_tpr, total_tnr, total_f1, total_mcc, total_auc = 0, 0, 0, 0, 0, 0
-
-        y_pred_list = (np.array(y_proba) >= threshold).astype(int)
-        tn, fp, fn, tp, ba, tpr, tnr, f1, auc = evaluate_metrics(y_actual, y_pred_list, y_proba)
-        mcc = ((tp * tn) - (fp * fn)) / np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn))
-        total_ba += ba
-        total_tpr += tpr
-        total_tnr += tnr
-        total_f1 += f1
-        total_mcc += mcc
-        total_auc += auc
-
-        if total_ba > best_ba:
-            best_ba, best_tpr, best_tnr, best_f1, best_mcc, best_auc = total_ba, total_tpr, total_tnr, total_f1, total_mcc, total_auc
-
-    print("============== Average Performance =================\n",
-          '* BA :', "{:.3f}".format(best_ba), '\n',
-          '* TPR :', "{:.3f}".format(best_tpr), '\n',
-          '* TNR :', "{:.3f}".format(best_tnr), '\n',
-          '* F1-score :', "{:.3f}".format(best_f1), '\n',
-          '* MCC :', "{:.3f}".format(best_mcc), '\n',
-          '* AUC :', "{:.3f}".format(best_auc), '\n',
-          '======================================================')
-
-
+# ---------- modified predict for regression ----------
 def predict(args, model, data_loader, criterion, optimizer, is_train):
 
     device = args['DEVICE']
 
-    total_loss, correct = 0, 0
-    output_total, y_total, y_pred_total = [], [], []
+    total_loss = 0.0
+    output_total, y_total = [], []
 
     for i, X_data, y_data in data_loader:
-        if args['MODEL'] == 'acgcn-mmp':
+        # prepare y_data as float tensor (data_loader already returns float tensors)
+        y_data = torch.from_numpy(np.array(y_data)).float() if not isinstance(y_data, torch.Tensor) else y_data.float()
+
+        if args['MODEL'] == 'acgcn-mmp' or args['MODEL'] == 'acgcn-snn':
             smiles1 = [x[0]['GRAPH_SMILES1'] for x in X_data]
             smiles2 = [x[0]['GRAPH_SMILES2'] for x in X_data]
-            y_data = torch.from_numpy(np.array(y_data)).float()
 
             batch_smiles1 = dgl.batch(smiles1)
             batch_smiles2 = dgl.batch(smiles2)
@@ -93,7 +73,6 @@ def predict(args, model, data_loader, criterion, optimizer, is_train):
             core = [x[0]['GRAPH_CORE'] for x in X_data]
             sub1 = [x[0]['GRAPH_SUB1'] for x in X_data]
             sub2 = [x[0]['GRAPH_SUB2'] for x in X_data]
-            y_data = torch.from_numpy(np.array(y_data)).float()
 
             batch_core = dgl.batch(core)
             batch_sub1 = dgl.batch(sub1)
@@ -108,7 +87,7 @@ def predict(args, model, data_loader, criterion, optimizer, is_train):
             outputs = model(batch_core, batch_sub1, batch_sub2)
 
         loss = criterion(outputs, y_data)
-        output_total += outputs.tolist()
+        output_total += outputs.detach().cpu().tolist()
 
         if is_train:
             optimizer.zero_grad()
@@ -116,21 +95,20 @@ def predict(args, model, data_loader, criterion, optimizer, is_train):
             optimizer.step()
 
         total_loss += loss.item()
-        y_pred = (outputs >= 0.5).float()
-        correct += (y_pred == y_data).float().sum()
-        y_total += y_data.tolist()
-        y_pred_total += [int(i) for i in y_pred]
+        y_total += y_data.detach().cpu().tolist()
 
-    bal_acc = balanced_accuracy_score(y_total, y_pred_total)
-
-    return model, loss, total_loss, bal_acc, output_total
+    return model, loss, total_loss, output_total, y_total
 
 
 def get_actual_label(data_loader):
     
     y_arr = []
     for i, X_data, y_data in data_loader:
-        y_arr += y_data.tolist()
+        # y_data might be torch tensor
+        if isinstance(y_data, torch.Tensor):
+            y_arr += y_data.detach().cpu().tolist()
+        else:
+            y_arr += list(y_data)
     
     return y_arr
 
@@ -151,3 +129,41 @@ class WeightedBCELoss(torch.nn.Module):
             print(output, target)
             print(loss)
         return torch.neg(torch.mean(loss))
+
+
+# ---------- new regression metrics printing ----------
+def print_regression_metrics(y_pred, y_actual):
+    """
+    y_pred, y_actual: lists or numpy arrays (floats)
+    prints MSE, RMSE, R2, Pearson (PCC), Spearman
+    """
+    y_pred = np.array(y_pred)
+    y_actual = np.array(y_actual)
+
+    mse = mean_squared_error(y_actual, y_pred)
+    rmse = np.sqrt(mse)
+    r2 = r2_score(y_actual, y_pred)
+
+    # Pearson correlation
+    if _HAS_SCIPY:
+        try:
+            pcc, _ = pearsonr(y_actual, y_pred)
+        except Exception:
+            pcc = np.corrcoef(y_actual, y_pred)[0,1]
+        try:
+            spearman_corr, _ = spearmanr(y_actual, y_pred)
+        except Exception:
+            # fallback to pandas
+            spearman_corr = pd.Series(y_actual).corr(pd.Series(y_pred), method='spearman')
+    else:
+        # fallback to numpy/pandas
+        pcc = np.corrcoef(y_actual, y_pred)[0,1]
+        spearman_corr = pd.Series(y_actual).corr(pd.Series(y_pred), method='spearman')
+
+    print("============== Regression Performance =================")
+    print("* MSE : {:.6f}".format(mse))
+    print("* RMSE: {:.6f}".format(rmse))
+    print("* R2  : {:.6f}".format(r2))
+    print("* PCC : {:.6f}".format(pcc))
+    print("* Spearman: {:.6f}".format(spearman_corr))
+    print("=======================================================")

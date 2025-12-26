@@ -5,6 +5,7 @@ from utils.util import *
 from utils.data_loader import *
 from model.acgcn_mmp import ACGCN_MMP
 from model.acgcn_sub import ACGCN_SUB
+from model.acgcn_snn_base import ACGCN_SNN
 from sklearn.model_selection import train_test_split
 warnings.filterwarnings("ignore")
 
@@ -15,14 +16,13 @@ def main(args):
 
     ### Make dataset ###
     data = pd.read_csv('./data/' + args['TARGET_NAME'] + '_mmps.csv')
-    data['label'] = data['label'].astype(int)
-    label = data['label']
 
-    counter = label.value_counts()
-    tot = counter.sum()
-    class_weight = [tot / (2 * i) for i in counter]
-    
-    train_data, test_data = train_test_split(data, test_size=0.2, random_state=random_seed, stratify=label)
+    # Use regression target 'delta' (float)
+    # ensure delta is float
+    data['delta'] = data['delta'].astype(float)
+
+    # For regression do NOT stratify by label (we use delta)
+    train_data, test_data = train_test_split(data, test_size=0.2, random_state=random_seed)
 
     if args['MODEL'] == 'acgcn-mmp':
         model = ACGCN_MMP(args).to(device)
@@ -34,10 +34,19 @@ def main(args):
         train_loader = ACGCN_SUB_Dataset(args, train_data, True)
         test_loader = ACGCN_SUB_Dataset(args, test_data, False)
     
+    elif args['MODEL'] == 'acgcn-snn':
+        model = ACGCN_SNN(args).to(device)
+        train_loader = ACGCN_MMP_Dataset(args, train_data, True)
+        test_loader = ACGCN_MMP_Dataset(args, test_data, False)
+    
+    # get actual target values from test loader
     y_actual = get_actual_label(test_loader)
-    y_proba = train(args, model, train_loader, test_loader, class_weight)
 
-    print_metrics(y_proba, y_actual)
+    # train returns predictions for test set (list of floats)
+    y_pred = train(args, model, train_loader, test_loader)
+
+    # print regression metrics
+    print_regression_metrics(y_pred, y_actual)
 
 if __name__ == '__main__':
 

@@ -60,7 +60,7 @@ class ACGCN_SUB(nn.Module):
         out = torch.cat((core, sub1, sub2), axis=1)
         out = self.fc_layer2(out)
         out = self.out_layer(out)
-        out = torch.sigmoid(out)
+        # regression: do NOT apply sigmoid
         out = out.squeeze(-1)
 
         return out

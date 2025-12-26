@@ -1,46 +1,93 @@
 import os
 import torch.nn as nn
 from utils.util import *
+from sklearn.metrics import mean_squared_error
+import torch
 
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 
-def train(args, model, train_loader, test_loader, class_weight):
-
+def train(args, model, train_loader, test_loader):
+ 
     model_save_path = './result/' + args['MODEL'] + '_' + args['TARGET_NAME'] + '.tar'
     
     if not os.path.exists('./result'):
         os.makedirs('./result')
 
-    criterion = WeightedBCELoss(weights=class_weight)
+    # regression loss
+    criterion = nn.MSELoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=args["WEIGHT_DECAY"])
  
     num_epochs = 1000
-    best_test_ba = 0
+    best_test_mse = float('inf')
     early_stopping_count = 0
+    y_pred_test_best = None
+    
+    # history for plotting
+    history = {
+        'train_loss': [],
+        'test_loss': [],
+        'test_mse': []
+    }
 
     for epoch in range(num_epochs):
-        model, loss, total_loss, train_acc, _ = predict(args, model, train_loader, criterion, optimizer, True)
+        model.train()
+        model, loss, total_loss, train_outputs, train_y = predict(args, model, train_loader, criterion, optimizer, True)
         model.eval()
         with torch.no_grad():
-            _, _, test_loss, test_acc, y_proba = predict(args, model, test_loader, criterion, optimizer, False)
+            model, val_loss, test_total_loss, test_outputs, test_y = predict(args, model, test_loader, criterion, optimizer, False)
+            # compute validation MSE
+            test_mse = mean_squared_error(test_y, test_outputs)
+            avg_train_loss = total_loss / max(1, len(train_loader))
+            avg_test_loss = test_total_loss / max(1, len(test_loader))
+            
             print('Epoch: {}/{} '.format(epoch + 1, num_epochs),
-                  ' Training Loss: {:.3f}'.format(total_loss / len(train_loader)),
-                  ' Training Balanced Accuracy: {:.3f}'.format(train_acc),
-                  ' Test Loss: {:.3f}'.format(test_loss / len(test_loader)),
-                  ' Test Balanced Accuracy: {:.3f}'.format(test_acc))
+                  ' Training Loss: {:.6f}'.format(avg_train_loss),
+                  ' Test Loss: {:.6f}'.format(avg_test_loss),
+                  ' Test MSE: {:.6f}'.format(test_mse))
+        
+        # record history
+        history['train_loss'].append(float(avg_train_loss))
+        history['test_loss'].append(float(avg_test_loss))
+        history['test_mse'].append(float(test_mse))
+        
         model.train()
         
-        if test_acc > best_test_ba:
-            print("Test Accuracy improved from {:.3f} -> {:.3f}".format(best_test_ba, test_acc))
-            best_test_ba = test_acc
+        # save model when validation MSE improves (smaller)
+        if test_mse < best_test_mse:
+            print("Test MSE improved from {:.6f} -> {:.6f}".format(best_test_mse, test_mse))
+            best_test_mse = test_mse
             torch.save(model.state_dict(), model_save_path)
             early_stopping_count = 0
-            y_proba_test = y_proba  
-
+            y_pred_test_best = test_outputs[:]  # save best test predictions
         else:
             early_stopping_count += 1
-            print("Test Loss did not improved from {:.3f}.. Counter {}/{}".format(best_test_ba, early_stopping_count, args['EARLY_STOPPING_PATIENCE']))
+            print("Test MSE did not improve.. Counter {}/{}".format(early_stopping_count, args['EARLY_STOPPING_PATIENCE']))
             if early_stopping_count > args['EARLY_STOPPING_PATIENCE']:
                 print("Early Stopped ..")
                 break
+    
+    
+    # plot losses
+    try:
+        epochs = range(1, len(history['train_loss']) + 1)
+        plt.figure(figsize=(8, 5))
+        plt.plot(epochs, history['train_loss'], label='Train Loss', marker='o', markersize=3)
+#         plt.plot(epochs, history['test_loss'], label='Test Loss', marker='o', markersize=3)
+#         plt.plot(epochs, history['test_mse'], label='Test MSE', marker='o', markersize=3)
+        plt.xlabel('Epoch')
+        plt.ylabel('Loss / MSE')
+        plt.title(f'{args["MODEL"]}_{args["TARGET_NAME"]} Training Curve')
+        plt.legend()
+        plt.grid(True)
+        plt.tight_layout()
+        plot_path = os.path.join('./result', f'{args["MODEL"]}_{args["TARGET_NAME"]}_loss.png')
+        plt.savefig(plot_path, dpi=150)
+        plt.close()
+        print(f"Saved loss curve to {plot_path}")
+    except Exception as e:
+        print("Warning: failed to plot/save loss curve:", e)
 
-    return y_proba_test
+    # return best test predictions (list of floats)
+    return y_pred_test_best

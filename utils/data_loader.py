@@ -8,9 +8,7 @@ def ACGCN_MMP_Dataset(args, data, is_train, drop_last=False):
     device = args['DEVICE']
 
     if is_train:
-        data_swap = data.copy()
-        data_swap.smiles1, data_swap.smiles2 = data.smiles1, data.smiles2
-        data = pd.concat((data, data_swap))
+        # data augmentation / swap is not applied here for MMP? keep existing behavior if any
         data = data.reset_index()
         data = data[data.columns[1:]]
         
@@ -21,7 +19,9 @@ def ACGCN_MMP_Dataset(args, data, is_train, drop_last=False):
         dgl_graph_smiles2.append(create_graph(smiles2, device))
         
     data_set = [[{'GRAPH_SMILES1': dgl_graph_smiles1[i], 'GRAPH_SMILES2': dgl_graph_smiles2[i]}] for i in range(len(data))]
-    y = list(data.label)
+
+    # regression target: delta (float)
+    y = list(data.delta.astype(float))
 
     # Shuffle dataset
     if is_train:
@@ -42,7 +42,8 @@ def ACGCN_MMP_Dataset(args, data, is_train, drop_last=False):
     if remainder != 0:
         if not drop_last:  
             splited_y.append(y[:remainder])
-    splited_y = [torch.from_numpy(np.array(label)) for label in splited_y]
+    # convert label list to float tensors
+    splited_y = [torch.from_numpy(np.array(label)).float() for label in splited_y]
 
     loader = [(i, (splited_data_set[i]), splited_y[i]) for i in range(len(splited_data_set))]
         
@@ -69,7 +70,9 @@ def ACGCN_SUB_Dataset(args, data, is_train, drop_last=False):
         dgl_graph_sub2.append(create_graph(sub2, device))
         
     data_set = [[{'GRAPH_CORE': dgl_graph_core[i], 'GRAPH_SUB1': dgl_graph_sub1[i], 'GRAPH_SUB2': dgl_graph_sub2[i]}] for i in range(len(data))]
-    y = list(data.label)
+
+    # regression target: delta
+    y = list(data.delta.astype(float))
 
     if is_train:
         rd_idx = random.sample(range(len(data)), len(data))
@@ -85,13 +88,12 @@ def ACGCN_SUB_Dataset(args, data, is_train, drop_last=False):
             splited_data_set.append(data_set[:remainder])
     
     splited_y = np.array_split(y[remainder:], int(len(data_set)/batch_size))
-    splited_y = [list(x) for x in splited_y]
-
+    splited_y = [list(y) for y in splited_y]
     if remainder != 0:
-        if not drop_last:
+        if not drop_last:  
             splited_y.append(y[:remainder])
-    splited_y = [torch.from_numpy(np.array(l)) for l in splited_y]
-    
+    splited_y = [torch.from_numpy(np.array(label)).float() for label in splited_y]
+
     loader = [(i, (splited_data_set[i]), splited_y[i]) for i in range(len(splited_data_set))]
         
     return loader
