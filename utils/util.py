@@ -55,7 +55,7 @@ def predict(args, model, data_loader, criterion, optimizer, is_train):
         # prepare y_data as float tensor (data_loader already returns float tensors)
         y_data = torch.from_numpy(np.array(y_data)).float() if not isinstance(y_data, torch.Tensor) else y_data.float()
 
-        if args['MODEL'] == 'acgcn-mmp' or args['MODEL'] == 'acgcn-snn':
+        if args['MODEL'] in ('acgcn-mmp', 'acgcn-snn', 'attentivefp-mmp', 'weave-mmp'):
             smiles1 = [x[0]['GRAPH_SMILES1'] for x in X_data]
             smiles2 = [x[0]['GRAPH_SMILES2'] for x in X_data]
 

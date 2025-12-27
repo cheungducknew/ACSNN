@@ -1,49 +1,46 @@
 import sys
 import os
 
-# 添加项目根目录到Python路径
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.svm import SVR
 from sklearn.model_selection import train_test_split
+import numpy as np
+import pandas as pd
 
+# 导入当前目录下的工具函数
 from fingerprint import preprocess_data_with_fingerprints, prepare_features
 from evaluation import calculate_metrics, print_metrics
 
 
-def train_rf_model(X_train, y_train, random_state=42):
+def train_svm_model(X_train, y_train, random_state=42):
     """
-    训练随机森林模型
+    训练支持向量机模型
     :param X_train: 训练特征
     :param y_train: 训练标签
     :param random_state: 随机种子
     :return: 训练好的模型
     """
-    # 设置随机森林超参数
-    n_estimators = 200
-    # max_features = "log2"
-#     min_samples_leaf = 2
-    criterion = "squared_error"
-    max_depth = 50
+    # 设置SVM超参数
+    kernel = 'poly'
+    C = 1.0
+    epsilon = 0.1
+    gamma = 'scale'
     
     # 打印模型参数设置
-    print(f"随机森林参数设置:")
-    print(f"  决策树个数: {n_estimators}")
-    # print(f"  特征选择方式: {max_features}")
-#     print(f"  叶节点最小样本数: {min_samples_leaf}")
-    print(f"  分裂标准: {criterion}")
-    print(f"  最大树深度: {max_depth}")
+    print(f"支持向量机参数设置:")
+    print(f"  核函数: {kernel}")
+    print(f"  正则化参数C: {C}")
+    print(f"  不敏感损失参数epsilon: {epsilon}")
+    print(f"  核函数参数gamma: {gamma}")
     
-    rf = RandomForestRegressor(
-        n_estimators=n_estimators,
-        # max_features=max_features,
-#         min_samples_leaf=min_samples_leaf,
-        criterion=criterion,
-        max_depth=max_depth,
-        random_state=random_state
+    svm = SVR(
+        kernel=kernel,
+        C=C,
+        epsilon=epsilon,
+        gamma=gamma,
+#         random_state=random_state
     )
-    rf.fit(X_train, y_train)
-    return rf
+    svm.fit(X_train, y_train)
+    return svm
 
 
 def main(data_path, test_size=0.2, random_state=42):
@@ -60,23 +57,27 @@ def main(data_path, test_size=0.2, random_state=42):
     train_df, test_df = train_test_split(df, test_size=test_size, random_state=random_state)
     
     # 训练和评估MACCS指纹模型
-    print("\n训练基于MACCS指纹的随机森林模型...")
+    print("\n训练基于MACCS指纹的支持向量机模型...")
     X_train_maccs, y_train_maccs = prepare_features(train_df, 'maccs')
     X_test_maccs, y_test_maccs = prepare_features(test_df, 'maccs')
     
-    rf_maccs = train_rf_model(X_train_maccs, y_train_maccs, random_state=random_state)
-    y_pred_maccs = rf_maccs.predict(X_test_maccs)
+    print(f"MACCS特征维度: {X_train_maccs.shape[1]}")
+    
+    svm_maccs = train_svm_model(X_train_maccs, y_train_maccs, random_state=random_state)
+    y_pred_maccs = svm_maccs.predict(X_test_maccs)
     
     metrics_maccs = calculate_metrics(y_test_maccs, y_pred_maccs)
     print_metrics(metrics_maccs, "MACCS指纹")
     
     # 训练和评估ECFP指纹模型
-    print("\n训练基于ECFP指纹的随机森林模型...")
+    print("\n训练基于ECFP指纹的支持向量机模型...")
     X_train_ecfp, y_train_ecfp = prepare_features(train_df, 'ecfp')
     X_test_ecfp, y_test_ecfp = prepare_features(test_df, 'ecfp')
     
-    rf_ecfp = train_rf_model(X_train_ecfp, y_train_ecfp, random_state=random_state)
-    y_pred_ecfp = rf_ecfp.predict(X_test_ecfp)
+    print(f"ECFP特征维度: {X_train_ecfp.shape[1]}")
+    
+    svm_ecfp = train_svm_model(X_train_ecfp, y_train_ecfp, random_state=random_state)
+    y_pred_ecfp = svm_ecfp.predict(X_test_ecfp)
     
     metrics_ecfp = calculate_metrics(y_test_ecfp, y_pred_ecfp)
     print_metrics(metrics_ecfp, "ECFP指纹")

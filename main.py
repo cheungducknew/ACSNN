@@ -6,6 +6,8 @@ from utils.data_loader import *
 from model.acgcn_mmp import ACGCN_MMP
 from model.acgcn_sub import ACGCN_SUB
 from model.acgcn_snn_base import ACGCN_SNN
+from model.attentivefp_mmp import AttentiveFP_MMP
+from model.weave_mmp import Weave_MMP
 from sklearn.model_selection import train_test_split
 warnings.filterwarnings("ignore")
 
@@ -36,6 +38,16 @@ def main(args):
     
     elif args['MODEL'] == 'acgcn-snn':
         model = ACGCN_SNN(args).to(device)
+        train_loader = ACGCN_MMP_Dataset(args, train_data, True)
+        test_loader = ACGCN_MMP_Dataset(args, test_data, False)
+    
+    elif args['MODEL'] == 'attentivefp-mmp':
+        model = AttentiveFP_MMP(args).to(device)
+        train_loader = ACGCN_MMP_Dataset(args, train_data, True)
+        test_loader = ACGCN_MMP_Dataset(args, test_data, False)
+    
+    elif args['MODEL'] == 'weave-mmp':
+        model = Weave_MMP(args).to(device)
         train_loader = ACGCN_MMP_Dataset(args, train_data, True)
         test_loader = ACGCN_MMP_Dataset(args, test_data, False)
     
