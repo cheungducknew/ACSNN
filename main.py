@@ -10,6 +10,12 @@ from model.attentivefp_mmp import AttentiveFP_MMP
 from model.attentivefp_snn import AttentiveFP_SNN
 from model.weave_mmp import Weave_MMP
 from model.weave_snn import Weave_SNN
+from model.adapter_mmp import Adapter_MMP
+from model.adapter_snn import Adapter_SNN
+from model.attention_mmp import Attention_MMP
+from model.attention_snn import Attention_SNN
+from model.attention_diff import Attention_DIFF
+
 
 from sklearn.model_selection import train_test_split
 warnings.filterwarnings("ignore")
@@ -63,6 +69,56 @@ def main(args):
         model = Weave_SNN(args).to(device)
         train_loader = ACGCN_MMP_Dataset(args, train_data, True)
         test_loader = ACGCN_MMP_Dataset(args, test_data, False)
+    
+    elif args['MODEL'] == 'adapter-mmp':
+        model = Adapter_MMP(args).to(device)
+        
+        dataset = args['TARGET_NAME']
+        feature_dir = f"data/{dataset}_kpgt.npz"
+        model.load_kpgt_features(feature_dir)
+        
+        train_loader = ADAPTER_MMP_Dataset(args, train_data, True)
+        test_loader = ADAPTER_MMP_Dataset(args, test_data, False)
+    
+    elif args['MODEL'] == 'adapter-snn':
+        model = Adapter_SNN(args).to(device)
+        
+        dataset = args['TARGET_NAME']
+        feature_dir = f"data/{dataset}_kpgt.npz"
+        model.load_kpgt_features(feature_dir)
+        
+        train_loader = ADAPTER_MMP_Dataset(args, train_data, True)
+        test_loader = ADAPTER_MMP_Dataset(args, test_data, False)
+    
+    elif args['MODEL'] == 'attention-mmp':
+        model = Attention_MMP(args).to(device)
+        
+        dataset = args['TARGET_NAME']
+        feature_dir = f"data/{dataset}_kpgt.npz"
+        model.load_kpgt_features(feature_dir)
+        
+        train_loader = ADAPTER_MMP_Dataset(args, train_data, True)
+        test_loader = ADAPTER_MMP_Dataset(args, test_data, False)
+    
+    elif args['MODEL'] == 'attention-snn':
+        model = Attention_SNN(args).to(device)
+        
+        dataset = args['TARGET_NAME']
+        feature_dir = f"data/{dataset}_kpgt.npz"
+        model.load_kpgt_features(feature_dir)
+        
+        train_loader = ADAPTER_MMP_Dataset(args, train_data, True)
+        test_loader = ADAPTER_MMP_Dataset(args, test_data, False)
+    
+    elif args['MODEL'] == 'attention-diff':
+        model = Attention_DIFF(args).to(device)
+        
+        dataset = args['TARGET_NAME']
+        feature_dir = f"data/{dataset}_kpgt.npz"
+        model.load_kpgt_features(feature_dir)
+        
+        train_loader = ADAPTER_MMP_Dataset(args, train_data, True)
+        test_loader = ADAPTER_MMP_Dataset(args, test_data, False)
     
     # get actual target values from test loader
     y_actual = get_actual_label(test_loader)

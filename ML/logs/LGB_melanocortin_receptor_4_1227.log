@@ -1,0 +1,68 @@
+nohup: ignoring input
+数据集：../data/melanocortin_receptor_4_mmps.csv
+正在加载和预处理数据...
+原始数据大小: 5861
+处理后数据大小: 5861
+
+训练基于MACCS指纹的LightGBM模型...
+MACCS特征维度: 334
+LightGBM参数设置:
+  迭代次数: 500
+  最大树深度: 50
+  叶子节点数: 255
+  学习率: 0.1
+  样本采样率: 0.8
+  特征采样率: 0.8
+  叶节点最小样本数: 2
+  目标函数: regression
+  评估指标: rmse
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.006655 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 524
+[LightGBM] [Info] Number of data points in the train set: 4688, number of used features: 262
+[LightGBM] [Info] Start training from score 0.007155
+MACCS指纹 模型评估结果:
+mse: 0.1643
+rmse: 0.4053
+r2: 0.5135
+pcc: 0.7205
+spearman: 0.7111
+
+训练基于ECFP指纹的LightGBM模型...
+ECFP特征维度: 4096
+LightGBM参数设置:
+  迭代次数: 500
+  最大树深度: 50
+  叶子节点数: 255
+  学习率: 0.1
+  样本采样率: 0.8
+  特征采样率: 0.8
+  叶节点最小样本数: 2
+  目标函数: regression
+  评估指标: rmse
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.105573 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 5606
+[LightGBM] [Info] Number of data points in the train set: 4688, number of used features: 2803
+[LightGBM] [Info] Start training from score 0.007155
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+ECFP指纹 模型评估结果:
+mse: 0.0969
+rmse: 0.3113
+r2: 0.7130
+pcc: 0.8463
+spearman: 0.8556

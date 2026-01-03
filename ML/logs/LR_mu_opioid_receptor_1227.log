@@ -1,0 +1,33 @@
+nohup: ignoring input
+数据集：../data/mu_opioid_receptor_mmps.csv
+正在加载和预处理数据...
+原始数据大小: 7316
+处理后数据大小: 7316
+
+训练基于MACCS指纹的线性回归模型...
+MACCS特征维度: 334
+线性回归参数设置:
+  使用模型: Ridge回归 (L2正则化)
+  正则化强度alpha: 1.0
+  是否拟合截距: True
+  特征缩放: 已应用StandardScaler
+MACCS指纹 模型评估结果:
+mse: 0.3457
+rmse: 0.5879
+r2: 0.1156
+pcc: 0.3793
+spearman: 0.3667
+
+训练基于ECFP指纹的线性回归模型...
+ECFP特征维度: 4096
+线性回归参数设置:
+  使用模型: Ridge回归 (L2正则化)
+  正则化强度alpha: 1.0
+  是否拟合截距: True
+  特征缩放: 已应用StandardScaler
+ECFP指纹 模型评估结果:
+mse: 0.6794
+rmse: 0.8243
+r2: -0.7385
+pcc: 0.4682
+spearman: 0.7151

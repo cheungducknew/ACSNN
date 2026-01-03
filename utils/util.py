@@ -85,6 +85,32 @@ def predict(args, model, data_loader, criterion, optimizer, is_train):
                 y_data = y_data.to(device)
 
             outputs = model(batch_core, batch_sub1, batch_sub2)
+        
+        elif args['MODEL'] in ('adapter-mmp', 'adapter-snn', 'attention-mmp', 'attention-snn', 'attention-diff'):
+            # 从 X_data 中提取 smiles1 和 smiles2 字符串
+            batch_smiles1 = [x['smiles1'] for x in X_data]
+            batch_smiles2 = [x['smiles2'] for x in X_data]
+
+            # 确保 y_data 在正确的设备上
+            if torch.cuda.is_available():
+                y_data = y_data.to(device)
+
+            # 调用模型进行预测
+            outputs = model(batch_smiles1, batch_smiles2)
+        
+        elif args['MODEL'] in ('deepdta-mmp', 'deepdta-snn'):
+            # DeepDTA_MMP模型的输入是(batch_smiles1, batch_smiles2, batch_target)元组
+            batch_smiles1, batch_smiles2, batch_target = X_data
+            
+            # 确保数据在正确的设备上
+            if torch.cuda.is_available():
+                batch_smiles1 = batch_smiles1.to(device)
+                batch_smiles2 = batch_smiles2.to(device)
+                batch_target = batch_target.to(device)
+                y_data = y_data.to(device)
+            
+            # 调用模型进行预测
+            outputs = model(batch_target, batch_smiles1, batch_smiles2)
 
         loss = criterion(outputs, y_data)
         output_total += outputs.detach().cpu().tolist()

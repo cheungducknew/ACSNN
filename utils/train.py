@@ -17,7 +17,16 @@ def train(args, model, train_loader, test_loader):
 
     # regression loss
     criterion = nn.MSELoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=args["WEIGHT_DECAY"])
+    
+    # 为不同模型设置不同的学习率策略
+    if args['MODEL'].startswith('attention') or 'dta' in args['MODEL']:
+        # 为attention模型使用较小的初始学习率和学习率调度
+        optimizer = torch.optim.Adam(model.parameters(), lr=0.0005, weight_decay=args["WEIGHT_DECAY"])
+        scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=10, verbose=True)
+    else:
+        # 其他模型保持原学习率设置
+        optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=args["WEIGHT_DECAY"])
+        scheduler = None
  
     num_epochs = 1000
     best_test_mse = float('inf')
@@ -54,6 +63,10 @@ def train(args, model, train_loader, test_loader):
         
         model.train()
         
+        # 学习率调度
+        if scheduler is not None:
+            scheduler.step(test_mse)
+            
         # save model when validation MSE improves (smaller)
         if test_mse < best_test_mse:
             print("Test MSE improved from {:.6f} -> {:.6f}".format(best_test_mse, test_mse))

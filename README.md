@@ -99,7 +99,8 @@ pip install torch==1.8.1+cu101 torchvision==0.9.1+cu101 torchaudio==0.8.1 -f htt
 You can train and test the ACGCN model with the code. For example,
 you can run the following code to train the ACGCN-MMP model with the Mu opioid receptor datasets:
 ```
-python main.py --model 'acgcn-mmp' --target_name 'mu_opioid_receptor'
+python main.py --model 'attentivefp-mmp' --target_name 'thrombin'
+nohup python dta_main.py --model 'deepdta-mmp' >logs/deepdta_mmp_0103.log 2>&1&
 ```
 For another example, to train the ACGCN-sub model for Melanocortin receptor 4, you run the following code:
 ```

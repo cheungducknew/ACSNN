@@ -1,0 +1,82 @@
+nohup: ignoring input
+数据集：../data/thrombin_mmps.csv
+正在加载和预处理数据...
+原始数据大小: 4725
+处理后数据大小: 4725
+
+训练基于MACCS指纹的LightGBM模型...
+MACCS特征维度: 334
+LightGBM参数设置:
+  迭代次数: 500
+  最大树深度: 50
+  叶子节点数: 255
+  学习率: 0.1
+  样本采样率: 0.8
+  特征采样率: 0.8
+  叶节点最小样本数: 2
+  目标函数: regression
+  评估指标: rmse
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.006188 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 558
+[LightGBM] [Info] Number of data points in the train set: 3780, number of used features: 279
+[LightGBM] [Info] Start training from score 0.014056
+MACCS指纹 模型评估结果:
+mse: 0.3929
+rmse: 0.6268
+r2: 0.4164
+pcc: 0.6531
+spearman: 0.6183
+
+训练基于ECFP指纹的LightGBM模型...
+ECFP特征维度: 4096
+LightGBM参数设置:
+  迭代次数: 500
+  最大树深度: 50
+  叶子节点数: 255
+  学习率: 0.1
+  样本采样率: 0.8
+  特征采样率: 0.8
+  叶节点最小样本数: 2
+  目标函数: regression
+  评估指标: rmse
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.052342 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 7078
+[LightGBM] [Info] Number of data points in the train set: 3780, number of used features: 3539
+[LightGBM] [Info] Start training from score 0.014056
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+ECFP指纹 模型评估结果:
+mse: 0.3102
+rmse: 0.5569
+r2: 0.5393
+pcc: 0.7357
+spearman: 0.7116

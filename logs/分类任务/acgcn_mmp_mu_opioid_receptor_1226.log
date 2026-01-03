@@ -1,0 +1,642 @@
+nohup: ignoring input
+Using backend: pytorch
+device:cuda:0
+Epoch: 1/1000   Training Loss: 0.564  Training Balanced Accuracy: 0.725  Test Loss: 0.675  Test Balanced Accuracy: 0.721
+Test Accuracy improved from 0.000 -> 0.721
+Epoch: 2/1000   Training Loss: 0.484  Training Balanced Accuracy: 0.787  Test Loss: 0.569  Test Balanced Accuracy: 0.764
+Test Accuracy improved from 0.721 -> 0.764
+Epoch: 3/1000   Training Loss: 0.462  Training Balanced Accuracy: 0.791  Test Loss: 0.508  Test Balanced Accuracy: 0.774
+Test Accuracy improved from 0.764 -> 0.774
+Epoch: 4/1000   Training Loss: 0.426  Training Balanced Accuracy: 0.805  Test Loss: 0.532  Test Balanced Accuracy: 0.799
+Test Accuracy improved from 0.774 -> 0.799
+Epoch: 5/1000   Training Loss: 0.436  Training Balanced Accuracy: 0.802  Test Loss: 0.496  Test Balanced Accuracy: 0.789
+Test Loss did not improved from 0.799.. Counter 1/80
+Epoch: 6/1000   Training Loss: 0.403  Training Balanced Accuracy: 0.818  Test Loss: 0.513  Test Balanced Accuracy: 0.781
+Test Loss did not improved from 0.799.. Counter 2/80
+Epoch: 7/1000   Training Loss: 0.411  Training Balanced Accuracy: 0.823  Test Loss: 0.514  Test Balanced Accuracy: 0.794
+Test Loss did not improved from 0.799.. Counter 3/80
+Epoch: 8/1000   Training Loss: 0.373  Training Balanced Accuracy: 0.836  Test Loss: 0.500  Test Balanced Accuracy: 0.794
+Test Loss did not improved from 0.799.. Counter 4/80
+Epoch: 9/1000   Training Loss: 0.380  Training Balanced Accuracy: 0.828  Test Loss: 0.524  Test Balanced Accuracy: 0.806
+Test Accuracy improved from 0.799 -> 0.806
+Epoch: 10/1000   Training Loss: 0.384  Training Balanced Accuracy: 0.828  Test Loss: 0.490  Test Balanced Accuracy: 0.795
+Test Loss did not improved from 0.806.. Counter 1/80
+Epoch: 11/1000   Training Loss: 0.382  Training Balanced Accuracy: 0.831  Test Loss: 0.514  Test Balanced Accuracy: 0.808
+Test Accuracy improved from 0.806 -> 0.808
+Epoch: 12/1000   Training Loss: 0.356  Training Balanced Accuracy: 0.840  Test Loss: 0.582  Test Balanced Accuracy: 0.796
+Test Loss did not improved from 0.808.. Counter 1/80
+Epoch: 13/1000   Training Loss: 0.403  Training Balanced Accuracy: 0.831  Test Loss: 0.519  Test Balanced Accuracy: 0.786
+Test Loss did not improved from 0.808.. Counter 2/80
+Epoch: 14/1000   Training Loss: 0.366  Training Balanced Accuracy: 0.840  Test Loss: 0.539  Test Balanced Accuracy: 0.789
+Test Loss did not improved from 0.808.. Counter 3/80
+Epoch: 15/1000   Training Loss: 0.374  Training Balanced Accuracy: 0.836  Test Loss: 0.547  Test Balanced Accuracy: 0.795
+Test Loss did not improved from 0.808.. Counter 4/80
+Epoch: 16/1000   Training Loss: 0.352  Training Balanced Accuracy: 0.840  Test Loss: 0.525  Test Balanced Accuracy: 0.811
+Test Accuracy improved from 0.808 -> 0.811
+Epoch: 17/1000   Training Loss: 0.366  Training Balanced Accuracy: 0.829  Test Loss: 0.544  Test Balanced Accuracy: 0.799
+Test Loss did not improved from 0.811.. Counter 1/80
+Epoch: 18/1000   Training Loss: 0.363  Training Balanced Accuracy: 0.843  Test Loss: 0.528  Test Balanced Accuracy: 0.800
+Test Loss did not improved from 0.811.. Counter 2/80
+Epoch: 19/1000   Training Loss: 0.339  Training Balanced Accuracy: 0.855  Test Loss: 0.532  Test Balanced Accuracy: 0.807
+Test Loss did not improved from 0.811.. Counter 3/80
+Epoch: 20/1000   Training Loss: 0.361  Training Balanced Accuracy: 0.841  Test Loss: 0.503  Test Balanced Accuracy: 0.800
+Test Loss did not improved from 0.811.. Counter 4/80
+Epoch: 21/1000   Training Loss: 0.343  Training Balanced Accuracy: 0.853  Test Loss: 0.522  Test Balanced Accuracy: 0.795
+Test Loss did not improved from 0.811.. Counter 5/80
+Epoch: 22/1000   Training Loss: 0.325  Training Balanced Accuracy: 0.859  Test Loss: 0.536  Test Balanced Accuracy: 0.793
+Test Loss did not improved from 0.811.. Counter 6/80
+Epoch: 23/1000   Training Loss: 0.331  Training Balanced Accuracy: 0.852  Test Loss: 0.542  Test Balanced Accuracy: 0.810
+Test Loss did not improved from 0.811.. Counter 7/80
+Epoch: 24/1000   Training Loss: 0.324  Training Balanced Accuracy: 0.858  Test Loss: 0.530  Test Balanced Accuracy: 0.779
+Test Loss did not improved from 0.811.. Counter 8/80
+Epoch: 25/1000   Training Loss: 0.333  Training Balanced Accuracy: 0.850  Test Loss: 0.533  Test Balanced Accuracy: 0.794
+Test Loss did not improved from 0.811.. Counter 9/80
+Epoch: 26/1000   Training Loss: 0.329  Training Balanced Accuracy: 0.856  Test Loss: 0.501  Test Balanced Accuracy: 0.817
+Test Accuracy improved from 0.811 -> 0.817
+Epoch: 27/1000   Training Loss: 0.303  Training Balanced Accuracy: 0.872  Test Loss: 0.553  Test Balanced Accuracy: 0.804
+Test Loss did not improved from 0.817.. Counter 1/80
+Epoch: 28/1000   Training Loss: 0.311  Training Balanced Accuracy: 0.867  Test Loss: 0.530  Test Balanced Accuracy: 0.824
+Test Accuracy improved from 0.817 -> 0.824
+Epoch: 29/1000   Training Loss: 0.314  Training Balanced Accuracy: 0.866  Test Loss: 0.548  Test Balanced Accuracy: 0.805
+Test Loss did not improved from 0.824.. Counter 1/80
+Epoch: 30/1000   Training Loss: 0.307  Training Balanced Accuracy: 0.870  Test Loss: 0.530  Test Balanced Accuracy: 0.831
+Test Accuracy improved from 0.824 -> 0.831
+Epoch: 31/1000   Training Loss: 0.285  Training Balanced Accuracy: 0.875  Test Loss: 0.569  Test Balanced Accuracy: 0.823
+Test Loss did not improved from 0.831.. Counter 1/80
+Epoch: 32/1000   Training Loss: 0.311  Training Balanced Accuracy: 0.864  Test Loss: 0.597  Test Balanced Accuracy: 0.812
+Test Loss did not improved from 0.831.. Counter 2/80
+Epoch: 33/1000   Training Loss: 0.326  Training Balanced Accuracy: 0.855  Test Loss: 0.552  Test Balanced Accuracy: 0.809
+Test Loss did not improved from 0.831.. Counter 3/80
+Epoch: 34/1000   Training Loss: 0.322  Training Balanced Accuracy: 0.857  Test Loss: 0.520  Test Balanced Accuracy: 0.797
+Test Loss did not improved from 0.831.. Counter 4/80
+Epoch: 35/1000   Training Loss: 0.284  Training Balanced Accuracy: 0.879  Test Loss: 0.612  Test Balanced Accuracy: 0.810
+Test Loss did not improved from 0.831.. Counter 5/80
+Epoch: 36/1000   Training Loss: 0.309  Training Balanced Accuracy: 0.866  Test Loss: 0.559  Test Balanced Accuracy: 0.809
+Test Loss did not improved from 0.831.. Counter 6/80
+Epoch: 37/1000   Training Loss: 0.268  Training Balanced Accuracy: 0.895  Test Loss: 0.581  Test Balanced Accuracy: 0.841
+Test Accuracy improved from 0.831 -> 0.841
+Epoch: 38/1000   Training Loss: 0.300  Training Balanced Accuracy: 0.876  Test Loss: 0.550  Test Balanced Accuracy: 0.834
+Test Loss did not improved from 0.841.. Counter 1/80
+Epoch: 39/1000   Training Loss: 0.289  Training Balanced Accuracy: 0.879  Test Loss: 0.594  Test Balanced Accuracy: 0.847
+Test Accuracy improved from 0.841 -> 0.847
+Epoch: 40/1000   Training Loss: 0.283  Training Balanced Accuracy: 0.883  Test Loss: 0.559  Test Balanced Accuracy: 0.816
+Test Loss did not improved from 0.847.. Counter 1/80
+Epoch: 41/1000   Training Loss: 0.277  Training Balanced Accuracy: 0.884  Test Loss: 0.573  Test Balanced Accuracy: 0.799
+Test Loss did not improved from 0.847.. Counter 2/80
+Epoch: 42/1000   Training Loss: 0.299  Training Balanced Accuracy: 0.876  Test Loss: 0.551  Test Balanced Accuracy: 0.841
+Test Loss did not improved from 0.847.. Counter 3/80
+Epoch: 43/1000   Training Loss: 0.269  Training Balanced Accuracy: 0.897  Test Loss: 0.609  Test Balanced Accuracy: 0.830
+Test Loss did not improved from 0.847.. Counter 4/80
+Epoch: 44/1000   Training Loss: 0.267  Training Balanced Accuracy: 0.891  Test Loss: 0.511  Test Balanced Accuracy: 0.857
+Test Accuracy improved from 0.847 -> 0.857
+Epoch: 45/1000   Training Loss: 0.273  Training Balanced Accuracy: 0.893  Test Loss: 0.559  Test Balanced Accuracy: 0.828
+Test Loss did not improved from 0.857.. Counter 1/80
+Epoch: 46/1000   Training Loss: 0.265  Training Balanced Accuracy: 0.894  Test Loss: 0.522  Test Balanced Accuracy: 0.821
+Test Loss did not improved from 0.857.. Counter 2/80
+Epoch: 47/1000   Training Loss: 0.257  Training Balanced Accuracy: 0.895  Test Loss: 0.485  Test Balanced Accuracy: 0.813
+Test Loss did not improved from 0.857.. Counter 3/80
+Epoch: 48/1000   Training Loss: 0.275  Training Balanced Accuracy: 0.893  Test Loss: 0.651  Test Balanced Accuracy: 0.805
+Test Loss did not improved from 0.857.. Counter 4/80
+Epoch: 49/1000   Training Loss: 0.256  Training Balanced Accuracy: 0.900  Test Loss: 0.584  Test Balanced Accuracy: 0.845
+Test Loss did not improved from 0.857.. Counter 5/80
+Epoch: 50/1000   Training Loss: 0.267  Training Balanced Accuracy: 0.888  Test Loss: 0.544  Test Balanced Accuracy: 0.835
+Test Loss did not improved from 0.857.. Counter 6/80
+Epoch: 51/1000   Training Loss: 0.257  Training Balanced Accuracy: 0.896  Test Loss: 0.549  Test Balanced Accuracy: 0.825
+Test Loss did not improved from 0.857.. Counter 7/80
+Epoch: 52/1000   Training Loss: 0.266  Training Balanced Accuracy: 0.895  Test Loss: 0.539  Test Balanced Accuracy: 0.836
+Test Loss did not improved from 0.857.. Counter 8/80
+Epoch: 53/1000   Training Loss: 0.261  Training Balanced Accuracy: 0.893  Test Loss: 0.551  Test Balanced Accuracy: 0.831
+Test Loss did not improved from 0.857.. Counter 9/80
+Epoch: 54/1000   Training Loss: 0.260  Training Balanced Accuracy: 0.897  Test Loss: 0.531  Test Balanced Accuracy: 0.814
+Test Loss did not improved from 0.857.. Counter 10/80
+Epoch: 55/1000   Training Loss: 0.256  Training Balanced Accuracy: 0.902  Test Loss: 0.516  Test Balanced Accuracy: 0.813
+Test Loss did not improved from 0.857.. Counter 11/80
+Epoch: 56/1000   Training Loss: 0.247  Training Balanced Accuracy: 0.906  Test Loss: 0.540  Test Balanced Accuracy: 0.849
+Test Loss did not improved from 0.857.. Counter 12/80
+Epoch: 57/1000   Training Loss: 0.259  Training Balanced Accuracy: 0.894  Test Loss: 0.516  Test Balanced Accuracy: 0.843
+Test Loss did not improved from 0.857.. Counter 13/80
+Epoch: 58/1000   Training Loss: 0.257  Training Balanced Accuracy: 0.897  Test Loss: 0.603  Test Balanced Accuracy: 0.803
+Test Loss did not improved from 0.857.. Counter 14/80
+Epoch: 59/1000   Training Loss: 0.249  Training Balanced Accuracy: 0.900  Test Loss: 0.582  Test Balanced Accuracy: 0.829
+Test Loss did not improved from 0.857.. Counter 15/80
+Epoch: 60/1000   Training Loss: 0.232  Training Balanced Accuracy: 0.908  Test Loss: 0.516  Test Balanced Accuracy: 0.856
+Test Loss did not improved from 0.857.. Counter 16/80
+Epoch: 61/1000   Training Loss: 0.247  Training Balanced Accuracy: 0.907  Test Loss: 0.552  Test Balanced Accuracy: 0.840
+Test Loss did not improved from 0.857.. Counter 17/80
+Epoch: 62/1000   Training Loss: 0.235  Training Balanced Accuracy: 0.911  Test Loss: 0.541  Test Balanced Accuracy: 0.850
+Test Loss did not improved from 0.857.. Counter 18/80
+Epoch: 63/1000   Training Loss: 0.242  Training Balanced Accuracy: 0.906  Test Loss: 0.572  Test Balanced Accuracy: 0.844
+Test Loss did not improved from 0.857.. Counter 19/80
+Epoch: 64/1000   Training Loss: 0.238  Training Balanced Accuracy: 0.909  Test Loss: 0.607  Test Balanced Accuracy: 0.826
+Test Loss did not improved from 0.857.. Counter 20/80
+Epoch: 65/1000   Training Loss: 0.249  Training Balanced Accuracy: 0.898  Test Loss: 0.590  Test Balanced Accuracy: 0.830
+Test Loss did not improved from 0.857.. Counter 21/80
+Epoch: 66/1000   Training Loss: 0.236  Training Balanced Accuracy: 0.906  Test Loss: 0.518  Test Balanced Accuracy: 0.838
+Test Loss did not improved from 0.857.. Counter 22/80
+Epoch: 67/1000   Training Loss: 0.294  Training Balanced Accuracy: 0.887  Test Loss: 0.560  Test Balanced Accuracy: 0.827
+Test Loss did not improved from 0.857.. Counter 23/80
+Epoch: 68/1000   Training Loss: 0.244  Training Balanced Accuracy: 0.903  Test Loss: 0.503  Test Balanced Accuracy: 0.831
+Test Loss did not improved from 0.857.. Counter 24/80
+Epoch: 69/1000   Training Loss: 0.256  Training Balanced Accuracy: 0.896  Test Loss: 0.553  Test Balanced Accuracy: 0.846
+Test Loss did not improved from 0.857.. Counter 25/80
+Epoch: 70/1000   Training Loss: 0.231  Training Balanced Accuracy: 0.909  Test Loss: 0.511  Test Balanced Accuracy: 0.856
+Test Loss did not improved from 0.857.. Counter 26/80
+Epoch: 71/1000   Training Loss: 0.223  Training Balanced Accuracy: 0.913  Test Loss: 0.588  Test Balanced Accuracy: 0.846
+Test Loss did not improved from 0.857.. Counter 27/80
+Epoch: 72/1000   Training Loss: 0.235  Training Balanced Accuracy: 0.911  Test Loss: 0.521  Test Balanced Accuracy: 0.836
+Test Loss did not improved from 0.857.. Counter 28/80
+Epoch: 73/1000   Training Loss: 0.230  Training Balanced Accuracy: 0.913  Test Loss: 0.741  Test Balanced Accuracy: 0.843
+Test Loss did not improved from 0.857.. Counter 29/80
+Epoch: 74/1000   Training Loss: 0.240  Training Balanced Accuracy: 0.908  Test Loss: 0.593  Test Balanced Accuracy: 0.848
+Test Loss did not improved from 0.857.. Counter 30/80
+Epoch: 75/1000   Training Loss: 0.233  Training Balanced Accuracy: 0.911  Test Loss: 0.578  Test Balanced Accuracy: 0.837
+Test Loss did not improved from 0.857.. Counter 31/80
+Epoch: 76/1000   Training Loss: 0.224  Training Balanced Accuracy: 0.913  Test Loss: 0.594  Test Balanced Accuracy: 0.857
+Test Accuracy improved from 0.857 -> 0.857
+Epoch: 77/1000   Training Loss: 0.222  Training Balanced Accuracy: 0.909  Test Loss: 0.612  Test Balanced Accuracy: 0.868
+Test Accuracy improved from 0.857 -> 0.868
+Epoch: 78/1000   Training Loss: 0.246  Training Balanced Accuracy: 0.905  Test Loss: 0.630  Test Balanced Accuracy: 0.848
+Test Loss did not improved from 0.868.. Counter 1/80
+Epoch: 79/1000   Training Loss: 0.216  Training Balanced Accuracy: 0.919  Test Loss: 0.578  Test Balanced Accuracy: 0.850
+Test Loss did not improved from 0.868.. Counter 2/80
+Epoch: 80/1000   Training Loss: 0.225  Training Balanced Accuracy: 0.914  Test Loss: 0.622  Test Balanced Accuracy: 0.836
+Test Loss did not improved from 0.868.. Counter 3/80
+Epoch: 81/1000   Training Loss: 0.234  Training Balanced Accuracy: 0.909  Test Loss: 0.624  Test Balanced Accuracy: 0.832
+Test Loss did not improved from 0.868.. Counter 4/80
+Epoch: 82/1000   Training Loss: 0.226  Training Balanced Accuracy: 0.901  Test Loss: 0.620  Test Balanced Accuracy: 0.846
+Test Loss did not improved from 0.868.. Counter 5/80
+Epoch: 83/1000   Training Loss: 0.212  Training Balanced Accuracy: 0.920  Test Loss: 0.709  Test Balanced Accuracy: 0.834
+Test Loss did not improved from 0.868.. Counter 6/80
+Epoch: 84/1000   Training Loss: 0.253  Training Balanced Accuracy: 0.899  Test Loss: 0.555  Test Balanced Accuracy: 0.851
+Test Loss did not improved from 0.868.. Counter 7/80
+Epoch: 85/1000   Training Loss: 0.258  Training Balanced Accuracy: 0.894  Test Loss: 0.620  Test Balanced Accuracy: 0.849
+Test Loss did not improved from 0.868.. Counter 8/80
+Epoch: 86/1000   Training Loss: 0.250  Training Balanced Accuracy: 0.900  Test Loss: 0.485  Test Balanced Accuracy: 0.860
+Test Loss did not improved from 0.868.. Counter 9/80
+Epoch: 87/1000   Training Loss: 0.215  Training Balanced Accuracy: 0.915  Test Loss: 0.529  Test Balanced Accuracy: 0.841
+Test Loss did not improved from 0.868.. Counter 10/80
+Epoch: 88/1000   Training Loss: 0.233  Training Balanced Accuracy: 0.910  Test Loss: 0.633  Test Balanced Accuracy: 0.847
+Test Loss did not improved from 0.868.. Counter 11/80
+Epoch: 89/1000   Training Loss: 0.218  Training Balanced Accuracy: 0.921  Test Loss: 0.654  Test Balanced Accuracy: 0.843
+Test Loss did not improved from 0.868.. Counter 12/80
+Epoch: 90/1000   Training Loss: 0.226  Training Balanced Accuracy: 0.910  Test Loss: 0.711  Test Balanced Accuracy: 0.834
+Test Loss did not improved from 0.868.. Counter 13/80
+Epoch: 91/1000   Training Loss: 0.235  Training Balanced Accuracy: 0.911  Test Loss: 0.574  Test Balanced Accuracy: 0.839
+Test Loss did not improved from 0.868.. Counter 14/80
+Epoch: 92/1000   Training Loss: 0.233  Training Balanced Accuracy: 0.907  Test Loss: 0.586  Test Balanced Accuracy: 0.837
+Test Loss did not improved from 0.868.. Counter 15/80
+Epoch: 93/1000   Training Loss: 0.219  Training Balanced Accuracy: 0.915  Test Loss: 0.611  Test Balanced Accuracy: 0.867
+Test Loss did not improved from 0.868.. Counter 16/80
+Epoch: 94/1000   Training Loss: 0.218  Training Balanced Accuracy: 0.920  Test Loss: 0.610  Test Balanced Accuracy: 0.851
+Test Loss did not improved from 0.868.. Counter 17/80
+Epoch: 95/1000   Training Loss: 0.227  Training Balanced Accuracy: 0.908  Test Loss: 0.611  Test Balanced Accuracy: 0.851
+Test Loss did not improved from 0.868.. Counter 18/80
+Epoch: 96/1000   Training Loss: 0.232  Training Balanced Accuracy: 0.914  Test Loss: 0.599  Test Balanced Accuracy: 0.847
+Test Loss did not improved from 0.868.. Counter 19/80
+Epoch: 97/1000   Training Loss: 0.226  Training Balanced Accuracy: 0.915  Test Loss: 0.638  Test Balanced Accuracy: 0.850
+Test Loss did not improved from 0.868.. Counter 20/80
+Epoch: 98/1000   Training Loss: 0.226  Training Balanced Accuracy: 0.905  Test Loss: 0.614  Test Balanced Accuracy: 0.848
+Test Loss did not improved from 0.868.. Counter 21/80
+Epoch: 99/1000   Training Loss: 0.211  Training Balanced Accuracy: 0.918  Test Loss: 0.585  Test Balanced Accuracy: 0.857
+Test Loss did not improved from 0.868.. Counter 22/80
+Epoch: 100/1000   Training Loss: 0.208  Training Balanced Accuracy: 0.920  Test Loss: 0.642  Test Balanced Accuracy: 0.841
+Test Loss did not improved from 0.868.. Counter 23/80
+Epoch: 101/1000   Training Loss: 0.236  Training Balanced Accuracy: 0.907  Test Loss: 0.586  Test Balanced Accuracy: 0.859
+Test Loss did not improved from 0.868.. Counter 24/80
+Epoch: 102/1000   Training Loss: 0.228  Training Balanced Accuracy: 0.916  Test Loss: 0.588  Test Balanced Accuracy: 0.824
+Test Loss did not improved from 0.868.. Counter 25/80
+Epoch: 103/1000   Training Loss: 0.222  Training Balanced Accuracy: 0.912  Test Loss: 0.579  Test Balanced Accuracy: 0.857
+Test Loss did not improved from 0.868.. Counter 26/80
+Epoch: 104/1000   Training Loss: 0.224  Training Balanced Accuracy: 0.918  Test Loss: 0.657  Test Balanced Accuracy: 0.825
+Test Loss did not improved from 0.868.. Counter 27/80
+Epoch: 105/1000   Training Loss: 0.214  Training Balanced Accuracy: 0.917  Test Loss: 0.669  Test Balanced Accuracy: 0.868
+Test Loss did not improved from 0.868.. Counter 28/80
+Epoch: 106/1000   Training Loss: 0.230  Training Balanced Accuracy: 0.905  Test Loss: 0.567  Test Balanced Accuracy: 0.856
+Test Loss did not improved from 0.868.. Counter 29/80
+Epoch: 107/1000   Training Loss: 0.213  Training Balanced Accuracy: 0.914  Test Loss: 0.607  Test Balanced Accuracy: 0.855
+Test Loss did not improved from 0.868.. Counter 30/80
+Epoch: 108/1000   Training Loss: 0.221  Training Balanced Accuracy: 0.916  Test Loss: 0.632  Test Balanced Accuracy: 0.856
+Test Loss did not improved from 0.868.. Counter 31/80
+Epoch: 109/1000   Training Loss: 0.200  Training Balanced Accuracy: 0.924  Test Loss: 0.560  Test Balanced Accuracy: 0.847
+Test Loss did not improved from 0.868.. Counter 32/80
+Epoch: 110/1000   Training Loss: 0.225  Training Balanced Accuracy: 0.912  Test Loss: 0.591  Test Balanced Accuracy: 0.850
+Test Loss did not improved from 0.868.. Counter 33/80
+Epoch: 111/1000   Training Loss: 0.218  Training Balanced Accuracy: 0.915  Test Loss: 0.606  Test Balanced Accuracy: 0.825
+Test Loss did not improved from 0.868.. Counter 34/80
+Epoch: 112/1000   Training Loss: 0.237  Training Balanced Accuracy: 0.902  Test Loss: 0.569  Test Balanced Accuracy: 0.822
+Test Loss did not improved from 0.868.. Counter 35/80
+Epoch: 113/1000   Training Loss: 0.197  Training Balanced Accuracy: 0.927  Test Loss: 0.575  Test Balanced Accuracy: 0.844
+Test Loss did not improved from 0.868.. Counter 36/80
+Epoch: 114/1000   Training Loss: 0.202  Training Balanced Accuracy: 0.920  Test Loss: 0.603  Test Balanced Accuracy: 0.860
+Test Loss did not improved from 0.868.. Counter 37/80
+Epoch: 115/1000   Training Loss: 0.198  Training Balanced Accuracy: 0.919  Test Loss: 0.647  Test Balanced Accuracy: 0.837
+Test Loss did not improved from 0.868.. Counter 38/80
+Epoch: 116/1000   Training Loss: 0.224  Training Balanced Accuracy: 0.907  Test Loss: 0.596  Test Balanced Accuracy: 0.838
+Test Loss did not improved from 0.868.. Counter 39/80
+Epoch: 117/1000   Training Loss: 0.233  Training Balanced Accuracy: 0.902  Test Loss: 0.622  Test Balanced Accuracy: 0.851
+Test Loss did not improved from 0.868.. Counter 40/80
+Epoch: 118/1000   Training Loss: 0.189  Training Balanced Accuracy: 0.931  Test Loss: 0.633  Test Balanced Accuracy: 0.864
+Test Loss did not improved from 0.868.. Counter 41/80
+Epoch: 119/1000   Training Loss: 0.228  Training Balanced Accuracy: 0.912  Test Loss: 0.609  Test Balanced Accuracy: 0.877
+Test Accuracy improved from 0.868 -> 0.877
+Epoch: 120/1000   Training Loss: 0.224  Training Balanced Accuracy: 0.918  Test Loss: 0.661  Test Balanced Accuracy: 0.861
+Test Loss did not improved from 0.877.. Counter 1/80
+Epoch: 121/1000   Training Loss: 0.212  Training Balanced Accuracy: 0.922  Test Loss: 0.562  Test Balanced Accuracy: 0.860
+Test Loss did not improved from 0.877.. Counter 2/80
+Epoch: 122/1000   Training Loss: 0.210  Training Balanced Accuracy: 0.919  Test Loss: 0.530  Test Balanced Accuracy: 0.865
+Test Loss did not improved from 0.877.. Counter 3/80
+Epoch: 123/1000   Training Loss: 0.215  Training Balanced Accuracy: 0.917  Test Loss: 0.590  Test Balanced Accuracy: 0.837
+Test Loss did not improved from 0.877.. Counter 4/80
+Epoch: 124/1000   Training Loss: 0.209  Training Balanced Accuracy: 0.918  Test Loss: 0.575  Test Balanced Accuracy: 0.857
+Test Loss did not improved from 0.877.. Counter 5/80
+Epoch: 125/1000   Training Loss: 0.259  Training Balanced Accuracy: 0.906  Test Loss: 0.453  Test Balanced Accuracy: 0.851
+Test Loss did not improved from 0.877.. Counter 6/80
+Epoch: 126/1000   Training Loss: 0.216  Training Balanced Accuracy: 0.919  Test Loss: 0.603  Test Balanced Accuracy: 0.853
+Test Loss did not improved from 0.877.. Counter 7/80
+Epoch: 127/1000   Training Loss: 0.193  Training Balanced Accuracy: 0.930  Test Loss: 0.616  Test Balanced Accuracy: 0.851
+Test Loss did not improved from 0.877.. Counter 8/80
+Epoch: 128/1000   Training Loss: 0.201  Training Balanced Accuracy: 0.927  Test Loss: 0.684  Test Balanced Accuracy: 0.828
+Test Loss did not improved from 0.877.. Counter 9/80
+Epoch: 129/1000   Training Loss: 0.213  Training Balanced Accuracy: 0.918  Test Loss: 0.619  Test Balanced Accuracy: 0.857
+Test Loss did not improved from 0.877.. Counter 10/80
+Epoch: 130/1000   Training Loss: 0.196  Training Balanced Accuracy: 0.929  Test Loss: 0.596  Test Balanced Accuracy: 0.854
+Test Loss did not improved from 0.877.. Counter 11/80
+Epoch: 131/1000   Training Loss: 0.189  Training Balanced Accuracy: 0.929  Test Loss: 0.563  Test Balanced Accuracy: 0.859
+Test Loss did not improved from 0.877.. Counter 12/80
+Epoch: 132/1000   Training Loss: 0.205  Training Balanced Accuracy: 0.925  Test Loss: 0.595  Test Balanced Accuracy: 0.850
+Test Loss did not improved from 0.877.. Counter 13/80
+Epoch: 133/1000   Training Loss: 0.216  Training Balanced Accuracy: 0.917  Test Loss: 0.595  Test Balanced Accuracy: 0.852
+Test Loss did not improved from 0.877.. Counter 14/80
+Epoch: 134/1000   Training Loss: 0.194  Training Balanced Accuracy: 0.929  Test Loss: 0.570  Test Balanced Accuracy: 0.863
+Test Loss did not improved from 0.877.. Counter 15/80
+Epoch: 135/1000   Training Loss: 0.218  Training Balanced Accuracy: 0.910  Test Loss: 0.537  Test Balanced Accuracy: 0.863
+Test Loss did not improved from 0.877.. Counter 16/80
+Epoch: 136/1000   Training Loss: 0.208  Training Balanced Accuracy: 0.920  Test Loss: 0.594  Test Balanced Accuracy: 0.864
+Test Loss did not improved from 0.877.. Counter 17/80
+Epoch: 137/1000   Training Loss: 0.205  Training Balanced Accuracy: 0.925  Test Loss: 0.543  Test Balanced Accuracy: 0.854
+Test Loss did not improved from 0.877.. Counter 18/80
+Epoch: 138/1000   Training Loss: 0.210  Training Balanced Accuracy: 0.914  Test Loss: 0.565  Test Balanced Accuracy: 0.850
+Test Loss did not improved from 0.877.. Counter 19/80
+Epoch: 139/1000   Training Loss: 0.202  Training Balanced Accuracy: 0.918  Test Loss: 0.641  Test Balanced Accuracy: 0.869
+Test Loss did not improved from 0.877.. Counter 20/80
+Epoch: 140/1000   Training Loss: 0.202  Training Balanced Accuracy: 0.919  Test Loss: 0.519  Test Balanced Accuracy: 0.862
+Test Loss did not improved from 0.877.. Counter 21/80
+Epoch: 141/1000   Training Loss: 0.212  Training Balanced Accuracy: 0.920  Test Loss: 0.599  Test Balanced Accuracy: 0.866
+Test Loss did not improved from 0.877.. Counter 22/80
+Epoch: 142/1000   Training Loss: 0.228  Training Balanced Accuracy: 0.912  Test Loss: 0.553  Test Balanced Accuracy: 0.844
+Test Loss did not improved from 0.877.. Counter 23/80
+Epoch: 143/1000   Training Loss: 0.196  Training Balanced Accuracy: 0.929  Test Loss: 0.697  Test Balanced Accuracy: 0.833
+Test Loss did not improved from 0.877.. Counter 24/80
+Epoch: 144/1000   Training Loss: 0.194  Training Balanced Accuracy: 0.932  Test Loss: 0.586  Test Balanced Accuracy: 0.839
+Test Loss did not improved from 0.877.. Counter 25/80
+Epoch: 145/1000   Training Loss: 0.218  Training Balanced Accuracy: 0.917  Test Loss: 0.541  Test Balanced Accuracy: 0.844
+Test Loss did not improved from 0.877.. Counter 26/80
+Epoch: 146/1000   Training Loss: 0.187  Training Balanced Accuracy: 0.930  Test Loss: 0.499  Test Balanced Accuracy: 0.857
+Test Loss did not improved from 0.877.. Counter 27/80
+Epoch: 147/1000   Training Loss: 0.186  Training Balanced Accuracy: 0.934  Test Loss: 0.611  Test Balanced Accuracy: 0.847
+Test Loss did not improved from 0.877.. Counter 28/80
+Epoch: 148/1000   Training Loss: 0.205  Training Balanced Accuracy: 0.915  Test Loss: 0.569  Test Balanced Accuracy: 0.857
+Test Loss did not improved from 0.877.. Counter 29/80
+Epoch: 149/1000   Training Loss: 0.202  Training Balanced Accuracy: 0.928  Test Loss: 0.555  Test Balanced Accuracy: 0.848
+Test Loss did not improved from 0.877.. Counter 30/80
+Epoch: 150/1000   Training Loss: 0.232  Training Balanced Accuracy: 0.906  Test Loss: 0.591  Test Balanced Accuracy: 0.846
+Test Loss did not improved from 0.877.. Counter 31/80
+Epoch: 151/1000   Training Loss: 0.185  Training Balanced Accuracy: 0.932  Test Loss: 0.604  Test Balanced Accuracy: 0.869
+Test Loss did not improved from 0.877.. Counter 32/80
+Epoch: 152/1000   Training Loss: 0.193  Training Balanced Accuracy: 0.929  Test Loss: 0.719  Test Balanced Accuracy: 0.847
+Test Loss did not improved from 0.877.. Counter 33/80
+Epoch: 153/1000   Training Loss: 0.205  Training Balanced Accuracy: 0.922  Test Loss: 0.532  Test Balanced Accuracy: 0.846
+Test Loss did not improved from 0.877.. Counter 34/80
+Epoch: 154/1000   Training Loss: 0.201  Training Balanced Accuracy: 0.924  Test Loss: 0.587  Test Balanced Accuracy: 0.851
+Test Loss did not improved from 0.877.. Counter 35/80
+Epoch: 155/1000   Training Loss: 0.184  Training Balanced Accuracy: 0.934  Test Loss: 0.521  Test Balanced Accuracy: 0.848
+Test Loss did not improved from 0.877.. Counter 36/80
+Epoch: 156/1000   Training Loss: 0.206  Training Balanced Accuracy: 0.922  Test Loss: 0.558  Test Balanced Accuracy: 0.862
+Test Loss did not improved from 0.877.. Counter 37/80
+Epoch: 157/1000   Training Loss: 0.213  Training Balanced Accuracy: 0.918  Test Loss: 0.474  Test Balanced Accuracy: 0.866
+Test Loss did not improved from 0.877.. Counter 38/80
+Epoch: 158/1000   Training Loss: 0.182  Training Balanced Accuracy: 0.934  Test Loss: 0.606  Test Balanced Accuracy: 0.847
+Test Loss did not improved from 0.877.. Counter 39/80
+Epoch: 159/1000   Training Loss: 0.191  Training Balanced Accuracy: 0.923  Test Loss: 0.554  Test Balanced Accuracy: 0.862
+Test Loss did not improved from 0.877.. Counter 40/80
+Epoch: 160/1000   Training Loss: 0.193  Training Balanced Accuracy: 0.925  Test Loss: 0.547  Test Balanced Accuracy: 0.867
+Test Loss did not improved from 0.877.. Counter 41/80
+Epoch: 161/1000   Training Loss: 0.199  Training Balanced Accuracy: 0.922  Test Loss: 0.651  Test Balanced Accuracy: 0.871
+Test Loss did not improved from 0.877.. Counter 42/80
+Epoch: 162/1000   Training Loss: 0.210  Training Balanced Accuracy: 0.924  Test Loss: 0.579  Test Balanced Accuracy: 0.855
+Test Loss did not improved from 0.877.. Counter 43/80
+Epoch: 163/1000   Training Loss: 0.204  Training Balanced Accuracy: 0.923  Test Loss: 0.584  Test Balanced Accuracy: 0.874
+Test Loss did not improved from 0.877.. Counter 44/80
+Epoch: 164/1000   Training Loss: 0.205  Training Balanced Accuracy: 0.917  Test Loss: 0.656  Test Balanced Accuracy: 0.873
+Test Loss did not improved from 0.877.. Counter 45/80
+Epoch: 165/1000   Training Loss: 0.200  Training Balanced Accuracy: 0.928  Test Loss: 0.542  Test Balanced Accuracy: 0.850
+Test Loss did not improved from 0.877.. Counter 46/80
+Epoch: 166/1000   Training Loss: 0.187  Training Balanced Accuracy: 0.930  Test Loss: 0.548  Test Balanced Accuracy: 0.870
+Test Loss did not improved from 0.877.. Counter 47/80
+Epoch: 167/1000   Training Loss: 0.172  Training Balanced Accuracy: 0.939  Test Loss: 0.680  Test Balanced Accuracy: 0.871
+Test Loss did not improved from 0.877.. Counter 48/80
+Epoch: 168/1000   Training Loss: 0.203  Training Balanced Accuracy: 0.926  Test Loss: 0.608  Test Balanced Accuracy: 0.858
+Test Loss did not improved from 0.877.. Counter 49/80
+Epoch: 169/1000   Training Loss: 0.178  Training Balanced Accuracy: 0.940  Test Loss: 0.557  Test Balanced Accuracy: 0.864
+Test Loss did not improved from 0.877.. Counter 50/80
+Epoch: 170/1000   Training Loss: 0.189  Training Balanced Accuracy: 0.930  Test Loss: 0.533  Test Balanced Accuracy: 0.874
+Test Loss did not improved from 0.877.. Counter 51/80
+Epoch: 171/1000   Training Loss: 0.191  Training Balanced Accuracy: 0.924  Test Loss: 0.585  Test Balanced Accuracy: 0.848
+Test Loss did not improved from 0.877.. Counter 52/80
+Epoch: 172/1000   Training Loss: 0.183  Training Balanced Accuracy: 0.935  Test Loss: 0.536  Test Balanced Accuracy: 0.864
+Test Loss did not improved from 0.877.. Counter 53/80
+Epoch: 173/1000   Training Loss: 0.188  Training Balanced Accuracy: 0.926  Test Loss: 0.589  Test Balanced Accuracy: 0.878
+Test Accuracy improved from 0.877 -> 0.878
+Epoch: 174/1000   Training Loss: 0.176  Training Balanced Accuracy: 0.931  Test Loss: 0.610  Test Balanced Accuracy: 0.879
+Test Accuracy improved from 0.878 -> 0.879
+Epoch: 175/1000   Training Loss: 0.204  Training Balanced Accuracy: 0.923  Test Loss: 0.550  Test Balanced Accuracy: 0.862
+Test Loss did not improved from 0.879.. Counter 1/80
+Epoch: 176/1000   Training Loss: 0.206  Training Balanced Accuracy: 0.925  Test Loss: 0.517  Test Balanced Accuracy: 0.875
+Test Loss did not improved from 0.879.. Counter 2/80
+Epoch: 177/1000   Training Loss: 0.201  Training Balanced Accuracy: 0.925  Test Loss: 0.528  Test Balanced Accuracy: 0.881
+Test Accuracy improved from 0.879 -> 0.881
+Epoch: 178/1000   Training Loss: 0.199  Training Balanced Accuracy: 0.930  Test Loss: 0.511  Test Balanced Accuracy: 0.861
+Test Loss did not improved from 0.881.. Counter 1/80
+Epoch: 179/1000   Training Loss: 0.184  Training Balanced Accuracy: 0.929  Test Loss: 0.516  Test Balanced Accuracy: 0.874
+Test Loss did not improved from 0.881.. Counter 2/80
+Epoch: 180/1000   Training Loss: 0.183  Training Balanced Accuracy: 0.934  Test Loss: 0.474  Test Balanced Accuracy: 0.881
+Test Accuracy improved from 0.881 -> 0.881
+Epoch: 181/1000   Training Loss: 0.217  Training Balanced Accuracy: 0.919  Test Loss: 0.496  Test Balanced Accuracy: 0.889
+Test Accuracy improved from 0.881 -> 0.889
+Epoch: 182/1000   Training Loss: 0.180  Training Balanced Accuracy: 0.935  Test Loss: 0.531  Test Balanced Accuracy: 0.886
+Test Loss did not improved from 0.889.. Counter 1/80
+Epoch: 183/1000   Training Loss: 0.183  Training Balanced Accuracy: 0.931  Test Loss: 0.478  Test Balanced Accuracy: 0.860
+Test Loss did not improved from 0.889.. Counter 2/80
+Epoch: 184/1000   Training Loss: 0.215  Training Balanced Accuracy: 0.922  Test Loss: 0.476  Test Balanced Accuracy: 0.869
+Test Loss did not improved from 0.889.. Counter 3/80
+Epoch: 185/1000   Training Loss: 0.187  Training Balanced Accuracy: 0.928  Test Loss: 0.507  Test Balanced Accuracy: 0.860
+Test Loss did not improved from 0.889.. Counter 4/80
+Epoch: 186/1000   Training Loss: 0.193  Training Balanced Accuracy: 0.924  Test Loss: 0.498  Test Balanced Accuracy: 0.879
+Test Loss did not improved from 0.889.. Counter 5/80
+Epoch: 187/1000   Training Loss: 0.184  Training Balanced Accuracy: 0.936  Test Loss: 0.513  Test Balanced Accuracy: 0.860
+Test Loss did not improved from 0.889.. Counter 6/80
+Epoch: 188/1000   Training Loss: 0.187  Training Balanced Accuracy: 0.932  Test Loss: 0.667  Test Balanced Accuracy: 0.877
+Test Loss did not improved from 0.889.. Counter 7/80
+Epoch: 189/1000   Training Loss: 0.181  Training Balanced Accuracy: 0.932  Test Loss: 0.553  Test Balanced Accuracy: 0.881
+Test Loss did not improved from 0.889.. Counter 8/80
+Epoch: 190/1000   Training Loss: 0.175  Training Balanced Accuracy: 0.932  Test Loss: 0.507  Test Balanced Accuracy: 0.877
+Test Loss did not improved from 0.889.. Counter 9/80
+Epoch: 191/1000   Training Loss: 0.193  Training Balanced Accuracy: 0.928  Test Loss: 0.495  Test Balanced Accuracy: 0.858
+Test Loss did not improved from 0.889.. Counter 10/80
+Epoch: 192/1000   Training Loss: 0.198  Training Balanced Accuracy: 0.922  Test Loss: 0.518  Test Balanced Accuracy: 0.854
+Test Loss did not improved from 0.889.. Counter 11/80
+Epoch: 193/1000   Training Loss: 0.177  Training Balanced Accuracy: 0.946  Test Loss: 0.526  Test Balanced Accuracy: 0.864
+Test Loss did not improved from 0.889.. Counter 12/80
+Epoch: 194/1000   Training Loss: 0.192  Training Balanced Accuracy: 0.925  Test Loss: 0.535  Test Balanced Accuracy: 0.865
+Test Loss did not improved from 0.889.. Counter 13/80
+Epoch: 195/1000   Training Loss: 0.172  Training Balanced Accuracy: 0.939  Test Loss: 0.544  Test Balanced Accuracy: 0.866
+Test Loss did not improved from 0.889.. Counter 14/80
+Epoch: 196/1000   Training Loss: 0.166  Training Balanced Accuracy: 0.937  Test Loss: 0.587  Test Balanced Accuracy: 0.872
+Test Loss did not improved from 0.889.. Counter 15/80
+Epoch: 197/1000   Training Loss: 0.201  Training Balanced Accuracy: 0.923  Test Loss: 0.635  Test Balanced Accuracy: 0.857
+Test Loss did not improved from 0.889.. Counter 16/80
+Epoch: 198/1000   Training Loss: 0.195  Training Balanced Accuracy: 0.931  Test Loss: 0.458  Test Balanced Accuracy: 0.862
+Test Loss did not improved from 0.889.. Counter 17/80
+Epoch: 199/1000   Training Loss: 0.174  Training Balanced Accuracy: 0.934  Test Loss: 0.538  Test Balanced Accuracy: 0.881
+Test Loss did not improved from 0.889.. Counter 18/80
+Epoch: 200/1000   Training Loss: 0.194  Training Balanced Accuracy: 0.926  Test Loss: 0.538  Test Balanced Accuracy: 0.875
+Test Loss did not improved from 0.889.. Counter 19/80
+Epoch: 201/1000   Training Loss: 0.175  Training Balanced Accuracy: 0.940  Test Loss: 0.602  Test Balanced Accuracy: 0.852
+Test Loss did not improved from 0.889.. Counter 20/80
+Epoch: 202/1000   Training Loss: 0.180  Training Balanced Accuracy: 0.934  Test Loss: 0.510  Test Balanced Accuracy: 0.877
+Test Loss did not improved from 0.889.. Counter 21/80
+Epoch: 203/1000   Training Loss: 0.195  Training Balanced Accuracy: 0.926  Test Loss: 0.520  Test Balanced Accuracy: 0.893
+Test Accuracy improved from 0.889 -> 0.893
+Epoch: 204/1000   Training Loss: 0.181  Training Balanced Accuracy: 0.933  Test Loss: 0.575  Test Balanced Accuracy: 0.877
+Test Loss did not improved from 0.893.. Counter 1/80
+Epoch: 205/1000   Training Loss: 0.192  Training Balanced Accuracy: 0.927  Test Loss: 0.454  Test Balanced Accuracy: 0.871
+Test Loss did not improved from 0.893.. Counter 2/80
+Epoch: 206/1000   Training Loss: 0.178  Training Balanced Accuracy: 0.937  Test Loss: 0.543  Test Balanced Accuracy: 0.870
+Test Loss did not improved from 0.893.. Counter 3/80
+Epoch: 207/1000   Training Loss: 0.166  Training Balanced Accuracy: 0.936  Test Loss: 0.525  Test Balanced Accuracy: 0.867
+Test Loss did not improved from 0.893.. Counter 4/80
+Epoch: 208/1000   Training Loss: 0.191  Training Balanced Accuracy: 0.931  Test Loss: 0.559  Test Balanced Accuracy: 0.881
+Test Loss did not improved from 0.893.. Counter 5/80
+Epoch: 209/1000   Training Loss: 0.198  Training Balanced Accuracy: 0.921  Test Loss: 0.486  Test Balanced Accuracy: 0.873
+Test Loss did not improved from 0.893.. Counter 6/80
+Epoch: 210/1000   Training Loss: 0.168  Training Balanced Accuracy: 0.937  Test Loss: 0.502  Test Balanced Accuracy: 0.889
+Test Loss did not improved from 0.893.. Counter 7/80
+Epoch: 211/1000   Training Loss: 0.160  Training Balanced Accuracy: 0.939  Test Loss: 0.562  Test Balanced Accuracy: 0.880
+Test Loss did not improved from 0.893.. Counter 8/80
+Epoch: 212/1000   Training Loss: 0.160  Training Balanced Accuracy: 0.940  Test Loss: 0.550  Test Balanced Accuracy: 0.866
+Test Loss did not improved from 0.893.. Counter 9/80
+Epoch: 213/1000   Training Loss: 0.168  Training Balanced Accuracy: 0.939  Test Loss: 0.566  Test Balanced Accuracy: 0.878
+Test Loss did not improved from 0.893.. Counter 10/80
+Epoch: 214/1000   Training Loss: 0.190  Training Balanced Accuracy: 0.928  Test Loss: 0.522  Test Balanced Accuracy: 0.859
+Test Loss did not improved from 0.893.. Counter 11/80
+Epoch: 215/1000   Training Loss: 0.210  Training Balanced Accuracy: 0.916  Test Loss: 0.531  Test Balanced Accuracy: 0.872
+Test Loss did not improved from 0.893.. Counter 12/80
+Epoch: 216/1000   Training Loss: 0.174  Training Balanced Accuracy: 0.940  Test Loss: 0.601  Test Balanced Accuracy: 0.861
+Test Loss did not improved from 0.893.. Counter 13/80
+Epoch: 217/1000   Training Loss: 0.190  Training Balanced Accuracy: 0.934  Test Loss: 0.528  Test Balanced Accuracy: 0.866
+Test Loss did not improved from 0.893.. Counter 14/80
+Epoch: 218/1000   Training Loss: 0.170  Training Balanced Accuracy: 0.938  Test Loss: 0.487  Test Balanced Accuracy: 0.884
+Test Loss did not improved from 0.893.. Counter 15/80
+Epoch: 219/1000   Training Loss: 0.165  Training Balanced Accuracy: 0.941  Test Loss: 0.530  Test Balanced Accuracy: 0.890
+Test Loss did not improved from 0.893.. Counter 16/80
+Epoch: 220/1000   Training Loss: 0.163  Training Balanced Accuracy: 0.944  Test Loss: 0.500  Test Balanced Accuracy: 0.878
+Test Loss did not improved from 0.893.. Counter 17/80
+Epoch: 221/1000   Training Loss: 0.163  Training Balanced Accuracy: 0.942  Test Loss: 0.542  Test Balanced Accuracy: 0.869
+Test Loss did not improved from 0.893.. Counter 18/80
+Epoch: 222/1000   Training Loss: 0.186  Training Balanced Accuracy: 0.928  Test Loss: 0.582  Test Balanced Accuracy: 0.859
+Test Loss did not improved from 0.893.. Counter 19/80
+Epoch: 223/1000   Training Loss: 0.209  Training Balanced Accuracy: 0.920  Test Loss: 0.501  Test Balanced Accuracy: 0.882
+Test Loss did not improved from 0.893.. Counter 20/80
+Epoch: 224/1000   Training Loss: 0.183  Training Balanced Accuracy: 0.933  Test Loss: 0.537  Test Balanced Accuracy: 0.879
+Test Loss did not improved from 0.893.. Counter 21/80
+Epoch: 225/1000   Training Loss: 0.179  Training Balanced Accuracy: 0.936  Test Loss: 0.538  Test Balanced Accuracy: 0.861
+Test Loss did not improved from 0.893.. Counter 22/80
+Epoch: 226/1000   Training Loss: 0.198  Training Balanced Accuracy: 0.927  Test Loss: 0.503  Test Balanced Accuracy: 0.861
+Test Loss did not improved from 0.893.. Counter 23/80
+Epoch: 227/1000   Training Loss: 0.155  Training Balanced Accuracy: 0.950  Test Loss: 0.481  Test Balanced Accuracy: 0.889
+Test Loss did not improved from 0.893.. Counter 24/80
+Epoch: 228/1000   Training Loss: 0.164  Training Balanced Accuracy: 0.941  Test Loss: 0.583  Test Balanced Accuracy: 0.856
+Test Loss did not improved from 0.893.. Counter 25/80
+Epoch: 229/1000   Training Loss: 0.181  Training Balanced Accuracy: 0.934  Test Loss: 0.591  Test Balanced Accuracy: 0.882
+Test Loss did not improved from 0.893.. Counter 26/80
+Epoch: 230/1000   Training Loss: 0.163  Training Balanced Accuracy: 0.942  Test Loss: 0.568  Test Balanced Accuracy: 0.868
+Test Loss did not improved from 0.893.. Counter 27/80
+Epoch: 231/1000   Training Loss: 0.164  Training Balanced Accuracy: 0.936  Test Loss: 0.534  Test Balanced Accuracy: 0.886
+Test Loss did not improved from 0.893.. Counter 28/80
+Epoch: 232/1000   Training Loss: 0.201  Training Balanced Accuracy: 0.918  Test Loss: 0.551  Test Balanced Accuracy: 0.874
+Test Loss did not improved from 0.893.. Counter 29/80
+Epoch: 233/1000   Training Loss: 0.162  Training Balanced Accuracy: 0.941  Test Loss: 0.582  Test Balanced Accuracy: 0.879
+Test Loss did not improved from 0.893.. Counter 30/80
+Epoch: 234/1000   Training Loss: 0.172  Training Balanced Accuracy: 0.934  Test Loss: 0.494  Test Balanced Accuracy: 0.894
+Test Accuracy improved from 0.893 -> 0.894
+Epoch: 235/1000   Training Loss: 0.157  Training Balanced Accuracy: 0.941  Test Loss: 0.536  Test Balanced Accuracy: 0.884
+Test Loss did not improved from 0.894.. Counter 1/80
+Epoch: 236/1000   Training Loss: 0.160  Training Balanced Accuracy: 0.942  Test Loss: 0.750  Test Balanced Accuracy: 0.876
+Test Loss did not improved from 0.894.. Counter 2/80
+Epoch: 237/1000   Training Loss: 0.173  Training Balanced Accuracy: 0.936  Test Loss: 0.613  Test Balanced Accuracy: 0.869
+Test Loss did not improved from 0.894.. Counter 3/80
+Epoch: 238/1000   Training Loss: 0.179  Training Balanced Accuracy: 0.935  Test Loss: 0.508  Test Balanced Accuracy: 0.889
+Test Loss did not improved from 0.894.. Counter 4/80
+Epoch: 239/1000   Training Loss: 0.159  Training Balanced Accuracy: 0.944  Test Loss: 0.509  Test Balanced Accuracy: 0.872
+Test Loss did not improved from 0.894.. Counter 5/80
+Epoch: 240/1000   Training Loss: 0.179  Training Balanced Accuracy: 0.933  Test Loss: 0.527  Test Balanced Accuracy: 0.876
+Test Loss did not improved from 0.894.. Counter 6/80
+Epoch: 241/1000   Training Loss: 0.161  Training Balanced Accuracy: 0.946  Test Loss: 0.490  Test Balanced Accuracy: 0.884
+Test Loss did not improved from 0.894.. Counter 7/80
+Epoch: 242/1000   Training Loss: 0.176  Training Balanced Accuracy: 0.940  Test Loss: 0.497  Test Balanced Accuracy: 0.866
+Test Loss did not improved from 0.894.. Counter 8/80
+Epoch: 243/1000   Training Loss: 0.183  Training Balanced Accuracy: 0.931  Test Loss: 0.539  Test Balanced Accuracy: 0.864
+Test Loss did not improved from 0.894.. Counter 9/80
+Epoch: 244/1000   Training Loss: 0.171  Training Balanced Accuracy: 0.939  Test Loss: 0.517  Test Balanced Accuracy: 0.880
+Test Loss did not improved from 0.894.. Counter 10/80
+Epoch: 245/1000   Training Loss: 0.157  Training Balanced Accuracy: 0.948  Test Loss: 0.564  Test Balanced Accuracy: 0.881
+Test Loss did not improved from 0.894.. Counter 11/80
+Epoch: 246/1000   Training Loss: 0.159  Training Balanced Accuracy: 0.946  Test Loss: 0.570  Test Balanced Accuracy: 0.879
+Test Loss did not improved from 0.894.. Counter 12/80
+Epoch: 247/1000   Training Loss: 0.194  Training Balanced Accuracy: 0.927  Test Loss: 0.534  Test Balanced Accuracy: 0.873
+Test Loss did not improved from 0.894.. Counter 13/80
+Epoch: 248/1000   Training Loss: 0.163  Training Balanced Accuracy: 0.941  Test Loss: 0.536  Test Balanced Accuracy: 0.875
+Test Loss did not improved from 0.894.. Counter 14/80
+Epoch: 249/1000   Training Loss: 0.162  Training Balanced Accuracy: 0.941  Test Loss: 0.440  Test Balanced Accuracy: 0.891
+Test Loss did not improved from 0.894.. Counter 15/80
+Epoch: 250/1000   Training Loss: 0.153  Training Balanced Accuracy: 0.945  Test Loss: 0.461  Test Balanced Accuracy: 0.883
+Test Loss did not improved from 0.894.. Counter 16/80
+Epoch: 251/1000   Training Loss: 0.183  Training Balanced Accuracy: 0.936  Test Loss: 0.456  Test Balanced Accuracy: 0.866
+Test Loss did not improved from 0.894.. Counter 17/80
+Epoch: 252/1000   Training Loss: 0.172  Training Balanced Accuracy: 0.936  Test Loss: 0.498  Test Balanced Accuracy: 0.876
+Test Loss did not improved from 0.894.. Counter 18/80
+Epoch: 253/1000   Training Loss: 0.179  Training Balanced Accuracy: 0.935  Test Loss: 0.528  Test Balanced Accuracy: 0.877
+Test Loss did not improved from 0.894.. Counter 19/80
+Epoch: 254/1000   Training Loss: 0.158  Training Balanced Accuracy: 0.945  Test Loss: 0.489  Test Balanced Accuracy: 0.879
+Test Loss did not improved from 0.894.. Counter 20/80
+Epoch: 255/1000   Training Loss: 0.153  Training Balanced Accuracy: 0.946  Test Loss: 0.521  Test Balanced Accuracy: 0.884
+Test Loss did not improved from 0.894.. Counter 21/80
+Epoch: 256/1000   Training Loss: 0.156  Training Balanced Accuracy: 0.943  Test Loss: 0.851  Test Balanced Accuracy: 0.833
+Test Loss did not improved from 0.894.. Counter 22/80
+Epoch: 257/1000   Training Loss: 0.175  Training Balanced Accuracy: 0.929  Test Loss: 0.587  Test Balanced Accuracy: 0.879
+Test Loss did not improved from 0.894.. Counter 23/80
+Epoch: 258/1000   Training Loss: 0.172  Training Balanced Accuracy: 0.937  Test Loss: 0.574  Test Balanced Accuracy: 0.862
+Test Loss did not improved from 0.894.. Counter 24/80
+Epoch: 259/1000   Training Loss: 0.165  Training Balanced Accuracy: 0.947  Test Loss: 0.489  Test Balanced Accuracy: 0.868
+Test Loss did not improved from 0.894.. Counter 25/80
+Epoch: 260/1000   Training Loss: 0.192  Training Balanced Accuracy: 0.929  Test Loss: 0.529  Test Balanced Accuracy: 0.887
+Test Loss did not improved from 0.894.. Counter 26/80
+Epoch: 261/1000   Training Loss: 0.154  Training Balanced Accuracy: 0.948  Test Loss: 0.586  Test Balanced Accuracy: 0.870
+Test Loss did not improved from 0.894.. Counter 27/80
+Epoch: 262/1000   Training Loss: 0.162  Training Balanced Accuracy: 0.939  Test Loss: 0.515  Test Balanced Accuracy: 0.889
+Test Loss did not improved from 0.894.. Counter 28/80
+Epoch: 263/1000   Training Loss: 0.194  Training Balanced Accuracy: 0.927  Test Loss: 0.468  Test Balanced Accuracy: 0.890
+Test Loss did not improved from 0.894.. Counter 29/80
+Epoch: 264/1000   Training Loss: 0.175  Training Balanced Accuracy: 0.934  Test Loss: 0.569  Test Balanced Accuracy: 0.869
+Test Loss did not improved from 0.894.. Counter 30/80
+Epoch: 265/1000   Training Loss: 0.165  Training Balanced Accuracy: 0.943  Test Loss: 0.577  Test Balanced Accuracy: 0.878
+Test Loss did not improved from 0.894.. Counter 31/80
+Epoch: 266/1000   Training Loss: 0.172  Training Balanced Accuracy: 0.941  Test Loss: 0.547  Test Balanced Accuracy: 0.881
+Test Loss did not improved from 0.894.. Counter 32/80
+Epoch: 267/1000   Training Loss: 0.159  Training Balanced Accuracy: 0.943  Test Loss: 0.530  Test Balanced Accuracy: 0.863
+Test Loss did not improved from 0.894.. Counter 33/80
+Epoch: 268/1000   Training Loss: 0.161  Training Balanced Accuracy: 0.945  Test Loss: 0.483  Test Balanced Accuracy: 0.860
+Test Loss did not improved from 0.894.. Counter 34/80
+Epoch: 269/1000   Training Loss: 0.162  Training Balanced Accuracy: 0.943  Test Loss: 0.504  Test Balanced Accuracy: 0.867
+Test Loss did not improved from 0.894.. Counter 35/80
+Epoch: 270/1000   Training Loss: 0.155  Training Balanced Accuracy: 0.946  Test Loss: 0.545  Test Balanced Accuracy: 0.865
+Test Loss did not improved from 0.894.. Counter 36/80
+Epoch: 271/1000   Training Loss: 0.163  Training Balanced Accuracy: 0.945  Test Loss: 0.563  Test Balanced Accuracy: 0.872
+Test Loss did not improved from 0.894.. Counter 37/80
+Epoch: 272/1000   Training Loss: 0.167  Training Balanced Accuracy: 0.945  Test Loss: 0.576  Test Balanced Accuracy: 0.880
+Test Loss did not improved from 0.894.. Counter 38/80
+Epoch: 273/1000   Training Loss: 0.180  Training Balanced Accuracy: 0.935  Test Loss: 0.530  Test Balanced Accuracy: 0.851
+Test Loss did not improved from 0.894.. Counter 39/80
+Epoch: 274/1000   Training Loss: 0.167  Training Balanced Accuracy: 0.943  Test Loss: 0.495  Test Balanced Accuracy: 0.878
+Test Loss did not improved from 0.894.. Counter 40/80
+Epoch: 275/1000   Training Loss: 0.156  Training Balanced Accuracy: 0.947  Test Loss: 0.562  Test Balanced Accuracy: 0.871
+Test Loss did not improved from 0.894.. Counter 41/80
+Epoch: 276/1000   Training Loss: 0.176  Training Balanced Accuracy: 0.938  Test Loss: 0.540  Test Balanced Accuracy: 0.877
+Test Loss did not improved from 0.894.. Counter 42/80
+Epoch: 277/1000   Training Loss: 0.176  Training Balanced Accuracy: 0.932  Test Loss: 0.526  Test Balanced Accuracy: 0.880
+Test Loss did not improved from 0.894.. Counter 43/80
+Epoch: 278/1000   Training Loss: 0.155  Training Balanced Accuracy: 0.944  Test Loss: 0.549  Test Balanced Accuracy: 0.863
+Test Loss did not improved from 0.894.. Counter 44/80
+Epoch: 279/1000   Training Loss: 0.160  Training Balanced Accuracy: 0.943  Test Loss: 0.502  Test Balanced Accuracy: 0.877
+Test Loss did not improved from 0.894.. Counter 45/80
+Epoch: 280/1000   Training Loss: 0.186  Training Balanced Accuracy: 0.928  Test Loss: 0.595  Test Balanced Accuracy: 0.853
+Test Loss did not improved from 0.894.. Counter 46/80
+Epoch: 281/1000   Training Loss: 0.196  Training Balanced Accuracy: 0.920  Test Loss: 0.541  Test Balanced Accuracy: 0.869
+Test Loss did not improved from 0.894.. Counter 47/80
+Epoch: 282/1000   Training Loss: 0.159  Training Balanced Accuracy: 0.944  Test Loss: 0.541  Test Balanced Accuracy: 0.865
+Test Loss did not improved from 0.894.. Counter 48/80
+Epoch: 283/1000   Training Loss: 0.164  Training Balanced Accuracy: 0.944  Test Loss: 0.542  Test Balanced Accuracy: 0.877
+Test Loss did not improved from 0.894.. Counter 49/80
+Epoch: 284/1000   Training Loss: 0.160  Training Balanced Accuracy: 0.944  Test Loss: 0.530  Test Balanced Accuracy: 0.868
+Test Loss did not improved from 0.894.. Counter 50/80
+Epoch: 285/1000   Training Loss: 0.159  Training Balanced Accuracy: 0.944  Test Loss: 0.526  Test Balanced Accuracy: 0.876
+Test Loss did not improved from 0.894.. Counter 51/80
+Epoch: 286/1000   Training Loss: 0.193  Training Balanced Accuracy: 0.932  Test Loss: 0.486  Test Balanced Accuracy: 0.874
+Test Loss did not improved from 0.894.. Counter 52/80
+Epoch: 287/1000   Training Loss: 0.161  Training Balanced Accuracy: 0.941  Test Loss: 0.488  Test Balanced Accuracy: 0.884
+Test Loss did not improved from 0.894.. Counter 53/80
+Epoch: 288/1000   Training Loss: 0.168  Training Balanced Accuracy: 0.940  Test Loss: 0.518  Test Balanced Accuracy: 0.870
+Test Loss did not improved from 0.894.. Counter 54/80
+Epoch: 289/1000   Training Loss: 0.174  Training Balanced Accuracy: 0.936  Test Loss: 0.566  Test Balanced Accuracy: 0.866
+Test Loss did not improved from 0.894.. Counter 55/80
+Epoch: 290/1000   Training Loss: 0.196  Training Balanced Accuracy: 0.928  Test Loss: 0.486  Test Balanced Accuracy: 0.875
+Test Loss did not improved from 0.894.. Counter 56/80
+Epoch: 291/1000   Training Loss: 0.170  Training Balanced Accuracy: 0.944  Test Loss: 0.537  Test Balanced Accuracy: 0.880
+Test Loss did not improved from 0.894.. Counter 57/80
+Epoch: 292/1000   Training Loss: 0.168  Training Balanced Accuracy: 0.941  Test Loss: 0.429  Test Balanced Accuracy: 0.874
+Test Loss did not improved from 0.894.. Counter 58/80
+Epoch: 293/1000   Training Loss: 0.158  Training Balanced Accuracy: 0.943  Test Loss: 0.499  Test Balanced Accuracy: 0.874
+Test Loss did not improved from 0.894.. Counter 59/80
+Epoch: 294/1000   Training Loss: 0.179  Training Balanced Accuracy: 0.932  Test Loss: 0.587  Test Balanced Accuracy: 0.850
+Test Loss did not improved from 0.894.. Counter 60/80
+Epoch: 295/1000   Training Loss: 0.184  Training Balanced Accuracy: 0.931  Test Loss: 0.503  Test Balanced Accuracy: 0.892
+Test Loss did not improved from 0.894.. Counter 61/80
+Epoch: 296/1000   Training Loss: 0.150  Training Balanced Accuracy: 0.948  Test Loss: 0.501  Test Balanced Accuracy: 0.886
+Test Loss did not improved from 0.894.. Counter 62/80
+Epoch: 297/1000   Training Loss: 0.157  Training Balanced Accuracy: 0.943  Test Loss: 0.533  Test Balanced Accuracy: 0.878
+Test Loss did not improved from 0.894.. Counter 63/80
+Epoch: 298/1000   Training Loss: 0.180  Training Balanced Accuracy: 0.936  Test Loss: 0.632  Test Balanced Accuracy: 0.866
+Test Loss did not improved from 0.894.. Counter 64/80
+Epoch: 299/1000   Training Loss: 0.181  Training Balanced Accuracy: 0.932  Test Loss: 0.579  Test Balanced Accuracy: 0.872
+Test Loss did not improved from 0.894.. Counter 65/80
+Epoch: 300/1000   Training Loss: 0.188  Training Balanced Accuracy: 0.929  Test Loss: 0.514  Test Balanced Accuracy: 0.861
+Test Loss did not improved from 0.894.. Counter 66/80
+Epoch: 301/1000   Training Loss: 0.165  Training Balanced Accuracy: 0.939  Test Loss: 0.507  Test Balanced Accuracy: 0.874
+Test Loss did not improved from 0.894.. Counter 67/80
+Epoch: 302/1000   Training Loss: 0.183  Training Balanced Accuracy: 0.933  Test Loss: 0.507  Test Balanced Accuracy: 0.873
+Test Loss did not improved from 0.894.. Counter 68/80
+Epoch: 303/1000   Training Loss: 0.178  Training Balanced Accuracy: 0.937  Test Loss: 0.485  Test Balanced Accuracy: 0.880
+Test Loss did not improved from 0.894.. Counter 69/80
+Epoch: 304/1000   Training Loss: 0.160  Training Balanced Accuracy: 0.940  Test Loss: 0.534  Test Balanced Accuracy: 0.860
+Test Loss did not improved from 0.894.. Counter 70/80
+Epoch: 305/1000   Training Loss: 0.170  Training Balanced Accuracy: 0.935  Test Loss: 0.474  Test Balanced Accuracy: 0.877
+Test Loss did not improved from 0.894.. Counter 71/80
+Epoch: 306/1000   Training Loss: 0.169  Training Balanced Accuracy: 0.941  Test Loss: 0.550  Test Balanced Accuracy: 0.877
+Test Loss did not improved from 0.894.. Counter 72/80
+Epoch: 307/1000   Training Loss: 0.179  Training Balanced Accuracy: 0.934  Test Loss: 0.529  Test Balanced Accuracy: 0.891
+Test Loss did not improved from 0.894.. Counter 73/80
+Epoch: 308/1000   Training Loss: 0.196  Training Balanced Accuracy: 0.926  Test Loss: 0.534  Test Balanced Accuracy: 0.859
+Test Loss did not improved from 0.894.. Counter 74/80
+Epoch: 309/1000   Training Loss: 0.179  Training Balanced Accuracy: 0.934  Test Loss: 0.492  Test Balanced Accuracy: 0.877
+Test Loss did not improved from 0.894.. Counter 75/80
+Epoch: 310/1000   Training Loss: 0.182  Training Balanced Accuracy: 0.929  Test Loss: 0.504  Test Balanced Accuracy: 0.878
+Test Loss did not improved from 0.894.. Counter 76/80
+Epoch: 311/1000   Training Loss: 0.173  Training Balanced Accuracy: 0.944  Test Loss: 0.520  Test Balanced Accuracy: 0.886
+Test Loss did not improved from 0.894.. Counter 77/80
+Epoch: 312/1000   Training Loss: 0.172  Training Balanced Accuracy: 0.935  Test Loss: 0.489  Test Balanced Accuracy: 0.882
+Test Loss did not improved from 0.894.. Counter 78/80
+Epoch: 313/1000   Training Loss: 0.166  Training Balanced Accuracy: 0.939  Test Loss: 0.489  Test Balanced Accuracy: 0.878
+Test Loss did not improved from 0.894.. Counter 79/80
+Epoch: 314/1000   Training Loss: 0.181  Training Balanced Accuracy: 0.934  Test Loss: 0.461  Test Balanced Accuracy: 0.885
+Test Loss did not improved from 0.894.. Counter 80/80
+Epoch: 315/1000   Training Loss: 0.161  Training Balanced Accuracy: 0.939  Test Loss: 0.489  Test Balanced Accuracy: 0.882
+Test Loss did not improved from 0.894.. Counter 81/80
+Early Stopped ..
+============== Average Performance =================
+ * BA : 0.896 
+ * TPR : 0.886 
+ * TNR : 0.905 
+ * F1-score : 0.358 
+ * MCC : 0.417 
+ * AUC : 0.922 
+ ======================================================

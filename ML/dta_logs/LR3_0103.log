@@ -1,0 +1,22 @@
+nohup: ignoring input
+正在加载和预处理数据...
+原始数据大小: 9548
+处理后数据大小: 9548
+
+准备模型输入特征...
+特征维度: 4644
+训练集大小: 7638
+测试集大小: 1910
+
+训练LinearRegression模型...
+线性回归参数设置:
+  使用模型: LinearRegression
+  特征缩放: 已应用StandardScaler
+
+模型评估结果:
+DTA LR 模型评估结果:
+mse: 4.6581
+rmse: 2.1583
+r2: -1.8598
+pcc: 0.2783
+spearman: 0.3035

@@ -8,7 +8,7 @@ class Args(object):
     parser.add_argument('--target_name', default='thrombin', type=str, help='[\'thrombin\', \'mu_opioid_receptor\', \'melanocortin_receptor_4\']')
     parser.add_argument('--random_seed', type=int, default=42, help='Random seed for data split')
     parser.add_argument('--batch_size', type=int, default=128, help='Batch Size')
-    parser.add_argument('--early_stopping_patience', type=int, default=100, help='Early stopping patience')
+    parser.add_argument('--early_stopping_patience', type=int, default=200, help='Early stopping patience')
     parser.add_argument('--weight_decay', type=float, default=1e-4, help='Weight decay')
     parser.add_argument('--drop_out', type=float, default=0.2, help='Dropout probability')
     parser.add_argument('--device', type=str, default="cuda:0" if torch.cuda.is_available() else "cpu")

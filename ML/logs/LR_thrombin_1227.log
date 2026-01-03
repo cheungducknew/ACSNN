@@ -1,0 +1,33 @@
+nohup: ignoring input
+数据集：../data/thrombin_mmps.csv
+正在加载和预处理数据...
+原始数据大小: 4725
+处理后数据大小: 4725
+
+训练基于MACCS指纹的线性回归模型...
+MACCS特征维度: 334
+线性回归参数设置:
+  使用模型: Ridge回归 (L2正则化)
+  正则化强度alpha: 1.0
+  是否拟合截距: True
+  特征缩放: 已应用StandardScaler
+MACCS指纹 模型评估结果:
+mse: 0.6380
+rmse: 0.7987
+r2: 0.0524
+pcc: 0.3035
+spearman: 0.2722
+
+训练基于ECFP指纹的线性回归模型...
+ECFP特征维度: 4096
+线性回归参数设置:
+  使用模型: Ridge回归 (L2正则化)
+  正则化强度alpha: 1.0
+  是否拟合截距: True
+  特征缩放: 已应用StandardScaler
+ECFP指纹 模型评估结果:
+mse: 0.7461
+rmse: 0.8638
+r2: -0.1081
+pcc: 0.5903
+spearman: 0.6813

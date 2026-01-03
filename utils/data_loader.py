@@ -97,3 +97,49 @@ def ACGCN_SUB_Dataset(args, data, is_train, drop_last=False):
     loader = [(i, (splited_data_set[i]), splited_y[i]) for i in range(len(splited_data_set))]
         
     return loader
+
+def ADAPTER_MMP_Dataset(args, data, is_train, drop_last=False):
+    """
+    创建 KPGT Adapter 模型的数据加载器
+    Args:
+        args: 参数配置
+        data: 包含 smiles1, smiles2 和 delta 的 DataFrame
+        is_train: 是否为训练集
+        drop_last: 是否丢弃最后一个不完整的批次
+    Returns:
+        loader: 数据加载器
+    """
+    batch_size = args['BATCH_SIZE']
+    
+    # 只需要保留 smiles1, smiles2 和 delta
+    batch_data = []
+    for _, row in data.iterrows():
+        batch_data.append({
+            'smiles1': row['smiles1'],
+            'smiles2': row['smiles2'],
+            'delta': row['delta']
+        })
+    
+    # 打乱数据
+    if is_train:
+        rd_idx = random.sample(range(len(batch_data)), len(batch_data))
+        batch_data = [batch_data[i] for i in rd_idx]
+    
+    # 分割批次
+    remainder = len(batch_data) % batch_size
+    splited_data_set = np.array_split(batch_data[remainder:], int(len(batch_data)/batch_size))
+    splited_data_set = [list(x) for x in splited_data_set]
+    
+    if remainder != 0 and not drop_last:
+        splited_data_set.append(batch_data[:remainder])
+    
+    # 分离 delta 作为标签
+    splited_y = []
+    for batch in splited_data_set:
+        batch_y = [item['delta'] for item in batch]
+        splited_y.append(torch.tensor(batch_y, dtype=torch.float32))
+    
+    # 创建加载器
+    loader = [(i, (splited_data_set[i]), splited_y[i]) for i in range(len(splited_data_set))]
+    
+    return loader

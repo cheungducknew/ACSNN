@@ -1,0 +1,57 @@
+nohup: ignoring input
+数据集：../data/mu_opioid_receptor_mmps.csv
+正在加载和预处理数据...
+原始数据大小: 7316
+处理后数据大小: 7316
+
+训练基于MACCS指纹的LightGBM模型...
+MACCS特征维度: 334
+LightGBM参数设置:
+  迭代次数: 500
+  最大树深度: 50
+  叶子节点数: 255
+  学习率: 0.1
+  样本采样率: 0.8
+  特征采样率: 0.8
+  叶节点最小样本数: 2
+  目标函数: regression
+  评估指标: rmse
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.005601 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 570
+[LightGBM] [Info] Number of data points in the train set: 5852, number of used features: 285
+[LightGBM] [Info] Start training from score -0.007815
+MACCS指纹 模型评估结果:
+mse: 0.2273
+rmse: 0.4768
+r2: 0.4183
+pcc: 0.6647
+spearman: 0.6076
+
+训练基于ECFP指纹的LightGBM模型...
+ECFP特征维度: 4096
+LightGBM参数设置:
+  迭代次数: 500
+  最大树深度: 50
+  叶子节点数: 255
+  学习率: 0.1
+  样本采样率: 0.8
+  特征采样率: 0.8
+  叶节点最小样本数: 2
+  目标函数: regression
+  评估指标: rmse
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.062006 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 7236
+[LightGBM] [Info] Number of data points in the train set: 5852, number of used features: 3618
+[LightGBM] [Info] Start training from score -0.007815
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+ECFP指纹 模型评估结果:
+mse: 0.1642
+rmse: 0.4052
+r2: 0.5799
+pcc: 0.7634
+spearman: 0.7744

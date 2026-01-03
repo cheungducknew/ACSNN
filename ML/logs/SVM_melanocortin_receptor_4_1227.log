@@ -1,0 +1,33 @@
+nohup: ignoring input
+数据集：../data/melanocortin_receptor_4_mmps.csv
+正在加载和预处理数据...
+原始数据大小: 5861
+处理后数据大小: 5861
+
+训练基于MACCS指纹的支持向量机模型...
+MACCS特征维度: 334
+支持向量机参数设置:
+  核函数: poly
+  正则化参数C: 1.0
+  不敏感损失参数epsilon: 0.1
+  核函数参数gamma: scale
+MACCS指纹 模型评估结果:
+mse: 0.2049
+rmse: 0.4526
+r2: 0.3932
+pcc: 0.6288
+spearman: 0.6092
+
+训练基于ECFP指纹的支持向量机模型...
+ECFP特征维度: 4096
+支持向量机参数设置:
+  核函数: poly
+  正则化参数C: 1.0
+  不敏感损失参数epsilon: 0.1
+  核函数参数gamma: scale
+ECFP指纹 模型评估结果:
+mse: 0.1067
+rmse: 0.3266
+r2: 0.6840
+pcc: 0.8413
+spearman: 0.8392

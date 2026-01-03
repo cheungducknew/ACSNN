@@ -1,0 +1,892 @@
+nohup: ignoring input
+Using backend: pytorch
+{'MODEL': 'attentivefp-snn', 'TARGET_NAME': 'mu_opioid_receptor', 'RANDOM_SEED': 42, 'BATCH_SIZE': 128, 'EARLY_STOPPING_PATIENCE': 100, 'WEIGHT_DECAY': 0.0001, 'DROP_OUT': 0.2, 'DEVICE': 'cuda:0'}
+Epoch: 1/1000   Training Loss: 0.502315  Test Loss: 0.397825  Test MSE: 0.396536
+Test MSE improved from inf -> 0.396536
+Epoch: 2/1000   Training Loss: 0.436565  Test Loss: 0.394325  Test MSE: 0.393128
+Test MSE improved from 0.396536 -> 0.393128
+Epoch: 3/1000   Training Loss: 0.427191  Test Loss: 0.392506  Test MSE: 0.391219
+Test MSE improved from 0.393128 -> 0.391219
+Epoch: 4/1000   Training Loss: 0.412040  Test Loss: 0.391167  Test MSE: 0.389828
+Test MSE improved from 0.391219 -> 0.389828
+Epoch: 5/1000   Training Loss: 0.404836  Test Loss: 0.389068  Test MSE: 0.387557
+Test MSE improved from 0.389828 -> 0.387557
+Epoch: 6/1000   Training Loss: 0.397741  Test Loss: 0.378290  Test MSE: 0.376361
+Test MSE improved from 0.387557 -> 0.376361
+Epoch: 7/1000   Training Loss: 0.391331  Test Loss: 0.373278  Test MSE: 0.371165
+Test MSE improved from 0.376361 -> 0.371165
+Epoch: 8/1000   Training Loss: 0.384088  Test Loss: 0.369943  Test MSE: 0.367794
+Test MSE improved from 0.371165 -> 0.367794
+Epoch: 9/1000   Training Loss: 0.385172  Test Loss: 0.376152  Test MSE: 0.374381
+Test MSE did not improve.. Counter 1/100
+Epoch: 10/1000   Training Loss: 0.373458  Test Loss: 0.367444  Test MSE: 0.365577
+Test MSE improved from 0.367794 -> 0.365577
+Epoch: 11/1000   Training Loss: 0.369481  Test Loss: 0.359351  Test MSE: 0.357233
+Test MSE improved from 0.365577 -> 0.357233
+Epoch: 12/1000   Training Loss: 0.367331  Test Loss: 0.359402  Test MSE: 0.357040
+Test MSE improved from 0.357233 -> 0.357040
+Epoch: 13/1000   Training Loss: 0.365309  Test Loss: 0.357529  Test MSE: 0.354803
+Test MSE improved from 0.357040 -> 0.354803
+Epoch: 14/1000   Training Loss: 0.364983  Test Loss: 0.354638  Test MSE: 0.351776
+Test MSE improved from 0.354803 -> 0.351776
+Epoch: 15/1000   Training Loss: 0.360762  Test Loss: 0.357618  Test MSE: 0.355125
+Test MSE did not improve.. Counter 1/100
+Epoch: 16/1000   Training Loss: 0.356959  Test Loss: 0.357425  Test MSE: 0.354674
+Test MSE did not improve.. Counter 2/100
+Epoch: 17/1000   Training Loss: 0.348156  Test Loss: 0.342063  Test MSE: 0.339484
+Test MSE improved from 0.351776 -> 0.339484
+Epoch: 18/1000   Training Loss: 0.347802  Test Loss: 0.342472  Test MSE: 0.339999
+Test MSE did not improve.. Counter 1/100
+Epoch: 19/1000   Training Loss: 0.344165  Test Loss: 0.338873  Test MSE: 0.336781
+Test MSE improved from 0.339484 -> 0.336781
+Epoch: 20/1000   Training Loss: 0.339614  Test Loss: 0.335029  Test MSE: 0.332980
+Test MSE improved from 0.336781 -> 0.332980
+Epoch: 21/1000   Training Loss: 0.336729  Test Loss: 0.332567  Test MSE: 0.330385
+Test MSE improved from 0.332980 -> 0.330385
+Epoch: 22/1000   Training Loss: 0.329134  Test Loss: 0.326193  Test MSE: 0.323870
+Test MSE improved from 0.330385 -> 0.323870
+Epoch: 23/1000   Training Loss: 0.325357  Test Loss: 0.330134  Test MSE: 0.327498
+Test MSE did not improve.. Counter 1/100
+Epoch: 24/1000   Training Loss: 0.323002  Test Loss: 0.315663  Test MSE: 0.314021
+Test MSE improved from 0.323870 -> 0.314021
+Epoch: 25/1000   Training Loss: 0.315272  Test Loss: 0.315775  Test MSE: 0.313539
+Test MSE improved from 0.314021 -> 0.313539
+Epoch: 26/1000   Training Loss: 0.315330  Test Loss: 0.307086  Test MSE: 0.305750
+Test MSE improved from 0.313539 -> 0.305750
+Epoch: 27/1000   Training Loss: 0.309371  Test Loss: 0.303974  Test MSE: 0.302972
+Test MSE improved from 0.305750 -> 0.302972
+Epoch: 28/1000   Training Loss: 0.308126  Test Loss: 0.304035  Test MSE: 0.302469
+Test MSE improved from 0.302972 -> 0.302469
+Epoch: 29/1000   Training Loss: 0.306541  Test Loss: 0.297438  Test MSE: 0.295803
+Test MSE improved from 0.302469 -> 0.295803
+Epoch: 30/1000   Training Loss: 0.302595  Test Loss: 0.288945  Test MSE: 0.287858
+Test MSE improved from 0.295803 -> 0.287858
+Epoch: 31/1000   Training Loss: 0.300679  Test Loss: 0.282486  Test MSE: 0.282061
+Test MSE improved from 0.287858 -> 0.282061
+Epoch: 32/1000   Training Loss: 0.293042  Test Loss: 0.282489  Test MSE: 0.280843
+Test MSE improved from 0.282061 -> 0.280843
+Epoch: 33/1000   Training Loss: 0.289523  Test Loss: 0.277570  Test MSE: 0.277704
+Test MSE improved from 0.280843 -> 0.277704
+Epoch: 34/1000   Training Loss: 0.278359  Test Loss: 0.272776  Test MSE: 0.272082
+Test MSE improved from 0.277704 -> 0.272082
+Epoch: 35/1000   Training Loss: 0.273707  Test Loss: 0.260956  Test MSE: 0.260580
+Test MSE improved from 0.272082 -> 0.260580
+Epoch: 36/1000   Training Loss: 0.271275  Test Loss: 0.263596  Test MSE: 0.262543
+Test MSE did not improve.. Counter 1/100
+Epoch: 37/1000   Training Loss: 0.267148  Test Loss: 0.257285  Test MSE: 0.255998
+Test MSE improved from 0.260580 -> 0.255998
+Epoch: 38/1000   Training Loss: 0.260411  Test Loss: 0.258332  Test MSE: 0.258268
+Test MSE did not improve.. Counter 1/100
+Epoch: 39/1000   Training Loss: 0.256024  Test Loss: 0.241257  Test MSE: 0.240986
+Test MSE improved from 0.255998 -> 0.240986
+Epoch: 40/1000   Training Loss: 0.251670  Test Loss: 0.238766  Test MSE: 0.237411
+Test MSE improved from 0.240986 -> 0.237411
+Epoch: 41/1000   Training Loss: 0.247625  Test Loss: 0.237067  Test MSE: 0.235013
+Test MSE improved from 0.237411 -> 0.235013
+Epoch: 42/1000   Training Loss: 0.242010  Test Loss: 0.244229  Test MSE: 0.242744
+Test MSE did not improve.. Counter 1/100
+Epoch: 43/1000   Training Loss: 0.236235  Test Loss: 0.235534  Test MSE: 0.234247
+Test MSE improved from 0.235013 -> 0.234247
+Epoch: 44/1000   Training Loss: 0.234977  Test Loss: 0.232969  Test MSE: 0.231871
+Test MSE improved from 0.234247 -> 0.231871
+Epoch: 45/1000   Training Loss: 0.227244  Test Loss: 0.228010  Test MSE: 0.227252
+Test MSE improved from 0.231871 -> 0.227252
+Epoch: 46/1000   Training Loss: 0.221446  Test Loss: 0.225169  Test MSE: 0.224433
+Test MSE improved from 0.227252 -> 0.224433
+Epoch: 47/1000   Training Loss: 0.219860  Test Loss: 0.218960  Test MSE: 0.216713
+Test MSE improved from 0.224433 -> 0.216713
+Epoch: 48/1000   Training Loss: 0.217781  Test Loss: 0.224698  Test MSE: 0.223556
+Test MSE did not improve.. Counter 1/100
+Epoch: 49/1000   Training Loss: 0.206438  Test Loss: 0.213008  Test MSE: 0.211466
+Test MSE improved from 0.216713 -> 0.211466
+Epoch: 50/1000   Training Loss: 0.206300  Test Loss: 0.215759  Test MSE: 0.214503
+Test MSE did not improve.. Counter 1/100
+Epoch: 51/1000   Training Loss: 0.203028  Test Loss: 0.210314  Test MSE: 0.208149
+Test MSE improved from 0.211466 -> 0.208149
+Epoch: 52/1000   Training Loss: 0.202596  Test Loss: 0.221339  Test MSE: 0.219331
+Test MSE did not improve.. Counter 1/100
+Epoch: 53/1000   Training Loss: 0.199562  Test Loss: 0.210602  Test MSE: 0.208242
+Test MSE did not improve.. Counter 2/100
+Epoch: 54/1000   Training Loss: 0.195257  Test Loss: 0.207898  Test MSE: 0.205876
+Test MSE improved from 0.208149 -> 0.205876
+Epoch: 55/1000   Training Loss: 0.188575  Test Loss: 0.203537  Test MSE: 0.202643
+Test MSE improved from 0.205876 -> 0.202643
+Epoch: 56/1000   Training Loss: 0.189049  Test Loss: 0.204665  Test MSE: 0.202326
+Test MSE improved from 0.202643 -> 0.202326
+Epoch: 57/1000   Training Loss: 0.183571  Test Loss: 0.199543  Test MSE: 0.196993
+Test MSE improved from 0.202326 -> 0.196993
+Epoch: 58/1000   Training Loss: 0.181490  Test Loss: 0.198931  Test MSE: 0.196245
+Test MSE improved from 0.196993 -> 0.196245
+Epoch: 59/1000   Training Loss: 0.177246  Test Loss: 0.194816  Test MSE: 0.191603
+Test MSE improved from 0.196245 -> 0.191603
+Epoch: 60/1000   Training Loss: 0.175210  Test Loss: 0.189996  Test MSE: 0.187467
+Test MSE improved from 0.191603 -> 0.187467
+Epoch: 61/1000   Training Loss: 0.172133  Test Loss: 0.189084  Test MSE: 0.185786
+Test MSE improved from 0.187467 -> 0.185786
+Epoch: 62/1000   Training Loss: 0.167319  Test Loss: 0.188633  Test MSE: 0.185478
+Test MSE improved from 0.185786 -> 0.185478
+Epoch: 63/1000   Training Loss: 0.166578  Test Loss: 0.194803  Test MSE: 0.192207
+Test MSE did not improve.. Counter 1/100
+Epoch: 64/1000   Training Loss: 0.166229  Test Loss: 0.188236  Test MSE: 0.185430
+Test MSE improved from 0.185478 -> 0.185430
+Epoch: 65/1000   Training Loss: 0.159306  Test Loss: 0.179949  Test MSE: 0.177389
+Test MSE improved from 0.185430 -> 0.177389
+Epoch: 66/1000   Training Loss: 0.157975  Test Loss: 0.191080  Test MSE: 0.188116
+Test MSE did not improve.. Counter 1/100
+Epoch: 67/1000   Training Loss: 0.159259  Test Loss: 0.182440  Test MSE: 0.179718
+Test MSE did not improve.. Counter 2/100
+Epoch: 68/1000   Training Loss: 0.153505  Test Loss: 0.170187  Test MSE: 0.166983
+Test MSE improved from 0.177389 -> 0.166983
+Epoch: 69/1000   Training Loss: 0.148408  Test Loss: 0.167779  Test MSE: 0.164832
+Test MSE improved from 0.166983 -> 0.164832
+Epoch: 70/1000   Training Loss: 0.148310  Test Loss: 0.170466  Test MSE: 0.167730
+Test MSE did not improve.. Counter 1/100
+Epoch: 71/1000   Training Loss: 0.145573  Test Loss: 0.162955  Test MSE: 0.160155
+Test MSE improved from 0.164832 -> 0.160155
+Epoch: 72/1000   Training Loss: 0.143510  Test Loss: 0.166871  Test MSE: 0.164024
+Test MSE did not improve.. Counter 1/100
+Epoch: 73/1000   Training Loss: 0.140014  Test Loss: 0.163319  Test MSE: 0.161016
+Test MSE did not improve.. Counter 2/100
+Epoch: 74/1000   Training Loss: 0.137780  Test Loss: 0.159123  Test MSE: 0.156603
+Test MSE improved from 0.160155 -> 0.156603
+Epoch: 75/1000   Training Loss: 0.140491  Test Loss: 0.158298  Test MSE: 0.155063
+Test MSE improved from 0.156603 -> 0.155063
+Epoch: 76/1000   Training Loss: 0.134231  Test Loss: 0.160324  Test MSE: 0.157478
+Test MSE did not improve.. Counter 1/100
+Epoch: 77/1000   Training Loss: 0.131059  Test Loss: 0.150610  Test MSE: 0.148229
+Test MSE improved from 0.155063 -> 0.148229
+Epoch: 78/1000   Training Loss: 0.129465  Test Loss: 0.160169  Test MSE: 0.157579
+Test MSE did not improve.. Counter 1/100
+Epoch: 79/1000   Training Loss: 0.134210  Test Loss: 0.155166  Test MSE: 0.152500
+Test MSE did not improve.. Counter 2/100
+Epoch: 80/1000   Training Loss: 0.131788  Test Loss: 0.151163  Test MSE: 0.148872
+Test MSE did not improve.. Counter 3/100
+Epoch: 81/1000   Training Loss: 0.125840  Test Loss: 0.153359  Test MSE: 0.151190
+Test MSE did not improve.. Counter 4/100
+Epoch: 82/1000   Training Loss: 0.125344  Test Loss: 0.154521  Test MSE: 0.151345
+Test MSE did not improve.. Counter 5/100
+Epoch: 83/1000   Training Loss: 0.120006  Test Loss: 0.142736  Test MSE: 0.139641
+Test MSE improved from 0.148229 -> 0.139641
+Epoch: 84/1000   Training Loss: 0.121806  Test Loss: 0.141837  Test MSE: 0.138898
+Test MSE improved from 0.139641 -> 0.138898
+Epoch: 85/1000   Training Loss: 0.118117  Test Loss: 0.138478  Test MSE: 0.135648
+Test MSE improved from 0.138898 -> 0.135648
+Epoch: 86/1000   Training Loss: 0.113216  Test Loss: 0.146177  Test MSE: 0.143799
+Test MSE did not improve.. Counter 1/100
+Epoch: 87/1000   Training Loss: 0.113250  Test Loss: 0.134447  Test MSE: 0.131743
+Test MSE improved from 0.135648 -> 0.131743
+Epoch: 88/1000   Training Loss: 0.111933  Test Loss: 0.137734  Test MSE: 0.134723
+Test MSE did not improve.. Counter 1/100
+Epoch: 89/1000   Training Loss: 0.110934  Test Loss: 0.138227  Test MSE: 0.135914
+Test MSE did not improve.. Counter 2/100
+Epoch: 90/1000   Training Loss: 0.109342  Test Loss: 0.137585  Test MSE: 0.134441
+Test MSE did not improve.. Counter 3/100
+Epoch: 91/1000   Training Loss: 0.108273  Test Loss: 0.142552  Test MSE: 0.138617
+Test MSE did not improve.. Counter 4/100
+Epoch: 92/1000   Training Loss: 0.109523  Test Loss: 0.131187  Test MSE: 0.128538
+Test MSE improved from 0.131743 -> 0.128538
+Epoch: 93/1000   Training Loss: 0.106038  Test Loss: 0.134540  Test MSE: 0.131753
+Test MSE did not improve.. Counter 1/100
+Epoch: 94/1000   Training Loss: 0.101573  Test Loss: 0.134666  Test MSE: 0.132076
+Test MSE did not improve.. Counter 2/100
+Epoch: 95/1000   Training Loss: 0.103019  Test Loss: 0.133960  Test MSE: 0.131645
+Test MSE did not improve.. Counter 3/100
+Epoch: 96/1000   Training Loss: 0.102109  Test Loss: 0.137540  Test MSE: 0.134048
+Test MSE did not improve.. Counter 4/100
+Epoch: 97/1000   Training Loss: 0.102944  Test Loss: 0.131072  Test MSE: 0.127968
+Test MSE improved from 0.128538 -> 0.127968
+Epoch: 98/1000   Training Loss: 0.099487  Test Loss: 0.137662  Test MSE: 0.134556
+Test MSE did not improve.. Counter 1/100
+Epoch: 99/1000   Training Loss: 0.102088  Test Loss: 0.126782  Test MSE: 0.124668
+Test MSE improved from 0.127968 -> 0.124668
+Epoch: 100/1000   Training Loss: 0.097646  Test Loss: 0.126955  Test MSE: 0.124322
+Test MSE improved from 0.124668 -> 0.124322
+Epoch: 101/1000   Training Loss: 0.096051  Test Loss: 0.128801  Test MSE: 0.125834
+Test MSE did not improve.. Counter 1/100
+Epoch: 102/1000   Training Loss: 0.096026  Test Loss: 0.128028  Test MSE: 0.126288
+Test MSE did not improve.. Counter 2/100
+Epoch: 103/1000   Training Loss: 0.093702  Test Loss: 0.125311  Test MSE: 0.123036
+Test MSE improved from 0.124322 -> 0.123036
+Epoch: 104/1000   Training Loss: 0.092791  Test Loss: 0.131276  Test MSE: 0.128537
+Test MSE did not improve.. Counter 1/100
+Epoch: 105/1000   Training Loss: 0.091280  Test Loss: 0.126394  Test MSE: 0.123522
+Test MSE did not improve.. Counter 2/100
+Epoch: 106/1000   Training Loss: 0.094612  Test Loss: 0.131369  Test MSE: 0.129372
+Test MSE did not improve.. Counter 3/100
+Epoch: 107/1000   Training Loss: 0.094535  Test Loss: 0.128762  Test MSE: 0.126047
+Test MSE did not improve.. Counter 4/100
+Epoch: 108/1000   Training Loss: 0.091839  Test Loss: 0.127618  Test MSE: 0.126398
+Test MSE did not improve.. Counter 5/100
+Epoch: 109/1000   Training Loss: 0.092605  Test Loss: 0.122500  Test MSE: 0.120544
+Test MSE improved from 0.123036 -> 0.120544
+Epoch: 110/1000   Training Loss: 0.089908  Test Loss: 0.120505  Test MSE: 0.118819
+Test MSE improved from 0.120544 -> 0.118819
+Epoch: 111/1000   Training Loss: 0.083756  Test Loss: 0.118377  Test MSE: 0.116451
+Test MSE improved from 0.118819 -> 0.116451
+Epoch: 112/1000   Training Loss: 0.085632  Test Loss: 0.120092  Test MSE: 0.118390
+Test MSE did not improve.. Counter 1/100
+Epoch: 113/1000   Training Loss: 0.085099  Test Loss: 0.114998  Test MSE: 0.113103
+Test MSE improved from 0.116451 -> 0.113103
+Epoch: 114/1000   Training Loss: 0.082282  Test Loss: 0.123930  Test MSE: 0.122994
+Test MSE did not improve.. Counter 1/100
+Epoch: 115/1000   Training Loss: 0.081514  Test Loss: 0.118115  Test MSE: 0.116056
+Test MSE did not improve.. Counter 2/100
+Epoch: 116/1000   Training Loss: 0.078503  Test Loss: 0.115522  Test MSE: 0.112655
+Test MSE improved from 0.113103 -> 0.112655
+Epoch: 117/1000   Training Loss: 0.077944  Test Loss: 0.111351  Test MSE: 0.109727
+Test MSE improved from 0.112655 -> 0.109727
+Epoch: 118/1000   Training Loss: 0.079107  Test Loss: 0.125537  Test MSE: 0.123803
+Test MSE did not improve.. Counter 1/100
+Epoch: 119/1000   Training Loss: 0.076875  Test Loss: 0.118288  Test MSE: 0.116431
+Test MSE did not improve.. Counter 2/100
+Epoch: 120/1000   Training Loss: 0.083219  Test Loss: 0.116965  Test MSE: 0.115288
+Test MSE did not improve.. Counter 3/100
+Epoch: 121/1000   Training Loss: 0.079409  Test Loss: 0.119930  Test MSE: 0.118352
+Test MSE did not improve.. Counter 4/100
+Epoch: 122/1000   Training Loss: 0.078888  Test Loss: 0.109327  Test MSE: 0.108762
+Test MSE improved from 0.109727 -> 0.108762
+Epoch: 123/1000   Training Loss: 0.075870  Test Loss: 0.110120  Test MSE: 0.108824
+Test MSE did not improve.. Counter 1/100
+Epoch: 124/1000   Training Loss: 0.078008  Test Loss: 0.112452  Test MSE: 0.111376
+Test MSE did not improve.. Counter 2/100
+Epoch: 125/1000   Training Loss: 0.077478  Test Loss: 0.119721  Test MSE: 0.118628
+Test MSE did not improve.. Counter 3/100
+Epoch: 126/1000   Training Loss: 0.076352  Test Loss: 0.107973  Test MSE: 0.106773
+Test MSE improved from 0.108762 -> 0.106773
+Epoch: 127/1000   Training Loss: 0.078141  Test Loss: 0.113811  Test MSE: 0.113278
+Test MSE did not improve.. Counter 1/100
+Epoch: 128/1000   Training Loss: 0.073729  Test Loss: 0.109985  Test MSE: 0.109139
+Test MSE did not improve.. Counter 2/100
+Epoch: 129/1000   Training Loss: 0.072152  Test Loss: 0.106721  Test MSE: 0.105816
+Test MSE improved from 0.106773 -> 0.105816
+Epoch: 130/1000   Training Loss: 0.073783  Test Loss: 0.103993  Test MSE: 0.102501
+Test MSE improved from 0.105816 -> 0.102501
+Epoch: 131/1000   Training Loss: 0.072753  Test Loss: 0.111014  Test MSE: 0.111044
+Test MSE did not improve.. Counter 1/100
+Epoch: 132/1000   Training Loss: 0.073078  Test Loss: 0.111848  Test MSE: 0.110891
+Test MSE did not improve.. Counter 2/100
+Epoch: 133/1000   Training Loss: 0.071634  Test Loss: 0.112613  Test MSE: 0.111360
+Test MSE did not improve.. Counter 3/100
+Epoch: 134/1000   Training Loss: 0.070549  Test Loss: 0.108696  Test MSE: 0.108041
+Test MSE did not improve.. Counter 4/100
+Epoch: 135/1000   Training Loss: 0.071677  Test Loss: 0.101629  Test MSE: 0.100226
+Test MSE improved from 0.102501 -> 0.100226
+Epoch: 136/1000   Training Loss: 0.069044  Test Loss: 0.106668  Test MSE: 0.105590
+Test MSE did not improve.. Counter 1/100
+Epoch: 137/1000   Training Loss: 0.068228  Test Loss: 0.108630  Test MSE: 0.106982
+Test MSE did not improve.. Counter 2/100
+Epoch: 138/1000   Training Loss: 0.073288  Test Loss: 0.110575  Test MSE: 0.109415
+Test MSE did not improve.. Counter 3/100
+Epoch: 139/1000   Training Loss: 0.070297  Test Loss: 0.102087  Test MSE: 0.100676
+Test MSE did not improve.. Counter 4/100
+Epoch: 140/1000   Training Loss: 0.068795  Test Loss: 0.104129  Test MSE: 0.103468
+Test MSE did not improve.. Counter 5/100
+Epoch: 141/1000   Training Loss: 0.068676  Test Loss: 0.097302  Test MSE: 0.096403
+Test MSE improved from 0.100226 -> 0.096403
+Epoch: 142/1000   Training Loss: 0.067009  Test Loss: 0.109985  Test MSE: 0.109365
+Test MSE did not improve.. Counter 1/100
+Epoch: 143/1000   Training Loss: 0.067456  Test Loss: 0.101712  Test MSE: 0.100020
+Test MSE did not improve.. Counter 2/100
+Epoch: 144/1000   Training Loss: 0.066922  Test Loss: 0.103397  Test MSE: 0.102048
+Test MSE did not improve.. Counter 3/100
+Epoch: 145/1000   Training Loss: 0.066756  Test Loss: 0.100214  Test MSE: 0.099178
+Test MSE did not improve.. Counter 4/100
+Epoch: 146/1000   Training Loss: 0.065158  Test Loss: 0.100212  Test MSE: 0.099143
+Test MSE did not improve.. Counter 5/100
+Epoch: 147/1000   Training Loss: 0.064461  Test Loss: 0.098883  Test MSE: 0.098041
+Test MSE did not improve.. Counter 6/100
+Epoch: 148/1000   Training Loss: 0.064828  Test Loss: 0.099652  Test MSE: 0.099261
+Test MSE did not improve.. Counter 7/100
+Epoch: 149/1000   Training Loss: 0.063169  Test Loss: 0.093778  Test MSE: 0.093149
+Test MSE improved from 0.096403 -> 0.093149
+Epoch: 150/1000   Training Loss: 0.063658  Test Loss: 0.096597  Test MSE: 0.095919
+Test MSE did not improve.. Counter 1/100
+Epoch: 151/1000   Training Loss: 0.061057  Test Loss: 0.100558  Test MSE: 0.100163
+Test MSE did not improve.. Counter 2/100
+Epoch: 152/1000   Training Loss: 0.063963  Test Loss: 0.096887  Test MSE: 0.096156
+Test MSE did not improve.. Counter 3/100
+Epoch: 153/1000   Training Loss: 0.063691  Test Loss: 0.102935  Test MSE: 0.100933
+Test MSE did not improve.. Counter 4/100
+Epoch: 154/1000   Training Loss: 0.063377  Test Loss: 0.100703  Test MSE: 0.099411
+Test MSE did not improve.. Counter 5/100
+Epoch: 155/1000   Training Loss: 0.062233  Test Loss: 0.097051  Test MSE: 0.096118
+Test MSE did not improve.. Counter 6/100
+Epoch: 156/1000   Training Loss: 0.061069  Test Loss: 0.101125  Test MSE: 0.100837
+Test MSE did not improve.. Counter 7/100
+Epoch: 157/1000   Training Loss: 0.063034  Test Loss: 0.099278  Test MSE: 0.098384
+Test MSE did not improve.. Counter 8/100
+Epoch: 158/1000   Training Loss: 0.061067  Test Loss: 0.101858  Test MSE: 0.102014
+Test MSE did not improve.. Counter 9/100
+Epoch: 159/1000   Training Loss: 0.062171  Test Loss: 0.100823  Test MSE: 0.100533
+Test MSE did not improve.. Counter 10/100
+Epoch: 160/1000   Training Loss: 0.059588  Test Loss: 0.098200  Test MSE: 0.097080
+Test MSE did not improve.. Counter 11/100
+Epoch: 161/1000   Training Loss: 0.061299  Test Loss: 0.102201  Test MSE: 0.100898
+Test MSE did not improve.. Counter 12/100
+Epoch: 162/1000   Training Loss: 0.060994  Test Loss: 0.094883  Test MSE: 0.094100
+Test MSE did not improve.. Counter 13/100
+Epoch: 163/1000   Training Loss: 0.058820  Test Loss: 0.095622  Test MSE: 0.095804
+Test MSE did not improve.. Counter 14/100
+Epoch: 164/1000   Training Loss: 0.058023  Test Loss: 0.093426  Test MSE: 0.093467
+Test MSE did not improve.. Counter 15/100
+Epoch: 165/1000   Training Loss: 0.059330  Test Loss: 0.098940  Test MSE: 0.098610
+Test MSE did not improve.. Counter 16/100
+Epoch: 166/1000   Training Loss: 0.059672  Test Loss: 0.097919  Test MSE: 0.097219
+Test MSE did not improve.. Counter 17/100
+Epoch: 167/1000   Training Loss: 0.059055  Test Loss: 0.098235  Test MSE: 0.097468
+Test MSE did not improve.. Counter 18/100
+Epoch: 168/1000   Training Loss: 0.059322  Test Loss: 0.094813  Test MSE: 0.093788
+Test MSE did not improve.. Counter 19/100
+Epoch: 169/1000   Training Loss: 0.062114  Test Loss: 0.094479  Test MSE: 0.094338
+Test MSE did not improve.. Counter 20/100
+Epoch: 170/1000   Training Loss: 0.057409  Test Loss: 0.094893  Test MSE: 0.094560
+Test MSE did not improve.. Counter 21/100
+Epoch: 171/1000   Training Loss: 0.057935  Test Loss: 0.095905  Test MSE: 0.095312
+Test MSE did not improve.. Counter 22/100
+Epoch: 172/1000   Training Loss: 0.057155  Test Loss: 0.094870  Test MSE: 0.094467
+Test MSE did not improve.. Counter 23/100
+Epoch: 173/1000   Training Loss: 0.059311  Test Loss: 0.088426  Test MSE: 0.086844
+Test MSE improved from 0.093149 -> 0.086844
+Epoch: 174/1000   Training Loss: 0.055618  Test Loss: 0.096185  Test MSE: 0.096043
+Test MSE did not improve.. Counter 1/100
+Epoch: 175/1000   Training Loss: 0.058032  Test Loss: 0.089537  Test MSE: 0.088763
+Test MSE did not improve.. Counter 2/100
+Epoch: 176/1000   Training Loss: 0.058228  Test Loss: 0.093218  Test MSE: 0.093293
+Test MSE did not improve.. Counter 3/100
+Epoch: 177/1000   Training Loss: 0.055580  Test Loss: 0.090656  Test MSE: 0.090274
+Test MSE did not improve.. Counter 4/100
+Epoch: 178/1000   Training Loss: 0.055657  Test Loss: 0.090794  Test MSE: 0.090615
+Test MSE did not improve.. Counter 5/100
+Epoch: 179/1000   Training Loss: 0.056267  Test Loss: 0.085517  Test MSE: 0.085505
+Test MSE improved from 0.086844 -> 0.085505
+Epoch: 180/1000   Training Loss: 0.052880  Test Loss: 0.087905  Test MSE: 0.087640
+Test MSE did not improve.. Counter 1/100
+Epoch: 181/1000   Training Loss: 0.051980  Test Loss: 0.092114  Test MSE: 0.091012
+Test MSE did not improve.. Counter 2/100
+Epoch: 182/1000   Training Loss: 0.054608  Test Loss: 0.089418  Test MSE: 0.088938
+Test MSE did not improve.. Counter 3/100
+Epoch: 183/1000   Training Loss: 0.054613  Test Loss: 0.088477  Test MSE: 0.087977
+Test MSE did not improve.. Counter 4/100
+Epoch: 184/1000   Training Loss: 0.054810  Test Loss: 0.089795  Test MSE: 0.088376
+Test MSE did not improve.. Counter 5/100
+Epoch: 185/1000   Training Loss: 0.054093  Test Loss: 0.091310  Test MSE: 0.089758
+Test MSE did not improve.. Counter 6/100
+Epoch: 186/1000   Training Loss: 0.054032  Test Loss: 0.087169  Test MSE: 0.087078
+Test MSE did not improve.. Counter 7/100
+Epoch: 187/1000   Training Loss: 0.052583  Test Loss: 0.093101  Test MSE: 0.092735
+Test MSE did not improve.. Counter 8/100
+Epoch: 188/1000   Training Loss: 0.052834  Test Loss: 0.089734  Test MSE: 0.089402
+Test MSE did not improve.. Counter 9/100
+Epoch: 189/1000   Training Loss: 0.054774  Test Loss: 0.089856  Test MSE: 0.089201
+Test MSE did not improve.. Counter 10/100
+Epoch: 190/1000   Training Loss: 0.054143  Test Loss: 0.090983  Test MSE: 0.090453
+Test MSE did not improve.. Counter 11/100
+Epoch: 191/1000   Training Loss: 0.054183  Test Loss: 0.089670  Test MSE: 0.090426
+Test MSE did not improve.. Counter 12/100
+Epoch: 192/1000   Training Loss: 0.053792  Test Loss: 0.091280  Test MSE: 0.090051
+Test MSE did not improve.. Counter 13/100
+Epoch: 193/1000   Training Loss: 0.053271  Test Loss: 0.090657  Test MSE: 0.090167
+Test MSE did not improve.. Counter 14/100
+Epoch: 194/1000   Training Loss: 0.051366  Test Loss: 0.094538  Test MSE: 0.093995
+Test MSE did not improve.. Counter 15/100
+Epoch: 195/1000   Training Loss: 0.053035  Test Loss: 0.085279  Test MSE: 0.084869
+Test MSE improved from 0.085505 -> 0.084869
+Epoch: 196/1000   Training Loss: 0.052452  Test Loss: 0.090249  Test MSE: 0.089309
+Test MSE did not improve.. Counter 1/100
+Epoch: 197/1000   Training Loss: 0.050902  Test Loss: 0.082198  Test MSE: 0.081666
+Test MSE improved from 0.084869 -> 0.081666
+Epoch: 198/1000   Training Loss: 0.047817  Test Loss: 0.086981  Test MSE: 0.086554
+Test MSE did not improve.. Counter 1/100
+Epoch: 199/1000   Training Loss: 0.049838  Test Loss: 0.087953  Test MSE: 0.087686
+Test MSE did not improve.. Counter 2/100
+Epoch: 200/1000   Training Loss: 0.049840  Test Loss: 0.086935  Test MSE: 0.086609
+Test MSE did not improve.. Counter 3/100
+Epoch: 201/1000   Training Loss: 0.051123  Test Loss: 0.090073  Test MSE: 0.089740
+Test MSE did not improve.. Counter 4/100
+Epoch: 202/1000   Training Loss: 0.050641  Test Loss: 0.084467  Test MSE: 0.084049
+Test MSE did not improve.. Counter 5/100
+Epoch: 203/1000   Training Loss: 0.047778  Test Loss: 0.091198  Test MSE: 0.091214
+Test MSE did not improve.. Counter 6/100
+Epoch: 204/1000   Training Loss: 0.047899  Test Loss: 0.088411  Test MSE: 0.088213
+Test MSE did not improve.. Counter 7/100
+Epoch: 205/1000   Training Loss: 0.049076  Test Loss: 0.091387  Test MSE: 0.091628
+Test MSE did not improve.. Counter 8/100
+Epoch: 206/1000   Training Loss: 0.050399  Test Loss: 0.089282  Test MSE: 0.088675
+Test MSE did not improve.. Counter 9/100
+Epoch: 207/1000   Training Loss: 0.049853  Test Loss: 0.087355  Test MSE: 0.086663
+Test MSE did not improve.. Counter 10/100
+Epoch: 208/1000   Training Loss: 0.050691  Test Loss: 0.086285  Test MSE: 0.086526
+Test MSE did not improve.. Counter 11/100
+Epoch: 209/1000   Training Loss: 0.048283  Test Loss: 0.088545  Test MSE: 0.089127
+Test MSE did not improve.. Counter 12/100
+Epoch: 210/1000   Training Loss: 0.050309  Test Loss: 0.098693  Test MSE: 0.098849
+Test MSE did not improve.. Counter 13/100
+Epoch: 211/1000   Training Loss: 0.048717  Test Loss: 0.088232  Test MSE: 0.087590
+Test MSE did not improve.. Counter 14/100
+Epoch: 212/1000   Training Loss: 0.047981  Test Loss: 0.086881  Test MSE: 0.086399
+Test MSE did not improve.. Counter 15/100
+Epoch: 213/1000   Training Loss: 0.050261  Test Loss: 0.087889  Test MSE: 0.087706
+Test MSE did not improve.. Counter 16/100
+Epoch: 214/1000   Training Loss: 0.049102  Test Loss: 0.086361  Test MSE: 0.086543
+Test MSE did not improve.. Counter 17/100
+Epoch: 215/1000   Training Loss: 0.046097  Test Loss: 0.084181  Test MSE: 0.085188
+Test MSE did not improve.. Counter 18/100
+Epoch: 216/1000   Training Loss: 0.047597  Test Loss: 0.086886  Test MSE: 0.087202
+Test MSE did not improve.. Counter 19/100
+Epoch: 217/1000   Training Loss: 0.047001  Test Loss: 0.079841  Test MSE: 0.080483
+Test MSE improved from 0.081666 -> 0.080483
+Epoch: 218/1000   Training Loss: 0.045816  Test Loss: 0.081554  Test MSE: 0.081738
+Test MSE did not improve.. Counter 1/100
+Epoch: 219/1000   Training Loss: 0.049376  Test Loss: 0.090666  Test MSE: 0.090036
+Test MSE did not improve.. Counter 2/100
+Epoch: 220/1000   Training Loss: 0.046343  Test Loss: 0.084330  Test MSE: 0.084950
+Test MSE did not improve.. Counter 3/100
+Epoch: 221/1000   Training Loss: 0.048156  Test Loss: 0.084353  Test MSE: 0.084404
+Test MSE did not improve.. Counter 4/100
+Epoch: 222/1000   Training Loss: 0.047038  Test Loss: 0.084907  Test MSE: 0.084915
+Test MSE did not improve.. Counter 5/100
+Epoch: 223/1000   Training Loss: 0.044842  Test Loss: 0.083673  Test MSE: 0.083504
+Test MSE did not improve.. Counter 6/100
+Epoch: 224/1000   Training Loss: 0.044143  Test Loss: 0.087923  Test MSE: 0.087828
+Test MSE did not improve.. Counter 7/100
+Epoch: 225/1000   Training Loss: 0.045349  Test Loss: 0.086742  Test MSE: 0.087023
+Test MSE did not improve.. Counter 8/100
+Epoch: 226/1000   Training Loss: 0.046447  Test Loss: 0.087042  Test MSE: 0.086446
+Test MSE did not improve.. Counter 9/100
+Epoch: 227/1000   Training Loss: 0.048329  Test Loss: 0.087840  Test MSE: 0.087677
+Test MSE did not improve.. Counter 10/100
+Epoch: 228/1000   Training Loss: 0.048428  Test Loss: 0.089051  Test MSE: 0.088961
+Test MSE did not improve.. Counter 11/100
+Epoch: 229/1000   Training Loss: 0.046188  Test Loss: 0.084317  Test MSE: 0.084379
+Test MSE did not improve.. Counter 12/100
+Epoch: 230/1000   Training Loss: 0.046733  Test Loss: 0.082411  Test MSE: 0.082400
+Test MSE did not improve.. Counter 13/100
+Epoch: 231/1000   Training Loss: 0.044379  Test Loss: 0.083146  Test MSE: 0.083645
+Test MSE did not improve.. Counter 14/100
+Epoch: 232/1000   Training Loss: 0.045272  Test Loss: 0.087485  Test MSE: 0.087042
+Test MSE did not improve.. Counter 15/100
+Epoch: 233/1000   Training Loss: 0.044962  Test Loss: 0.087062  Test MSE: 0.087287
+Test MSE did not improve.. Counter 16/100
+Epoch: 234/1000   Training Loss: 0.046400  Test Loss: 0.081712  Test MSE: 0.081929
+Test MSE did not improve.. Counter 17/100
+Epoch: 235/1000   Training Loss: 0.044401  Test Loss: 0.086581  Test MSE: 0.086399
+Test MSE did not improve.. Counter 18/100
+Epoch: 236/1000   Training Loss: 0.045237  Test Loss: 0.083063  Test MSE: 0.083085
+Test MSE did not improve.. Counter 19/100
+Epoch: 237/1000   Training Loss: 0.045308  Test Loss: 0.085124  Test MSE: 0.085316
+Test MSE did not improve.. Counter 20/100
+Epoch: 238/1000   Training Loss: 0.046421  Test Loss: 0.084090  Test MSE: 0.084213
+Test MSE did not improve.. Counter 21/100
+Epoch: 239/1000   Training Loss: 0.045984  Test Loss: 0.079555  Test MSE: 0.079813
+Test MSE improved from 0.080483 -> 0.079813
+Epoch: 240/1000   Training Loss: 0.045930  Test Loss: 0.085379  Test MSE: 0.085441
+Test MSE did not improve.. Counter 1/100
+Epoch: 241/1000   Training Loss: 0.041297  Test Loss: 0.081354  Test MSE: 0.081175
+Test MSE did not improve.. Counter 2/100
+Epoch: 242/1000   Training Loss: 0.043122  Test Loss: 0.084413  Test MSE: 0.084981
+Test MSE did not improve.. Counter 3/100
+Epoch: 243/1000   Training Loss: 0.045548  Test Loss: 0.083868  Test MSE: 0.083681
+Test MSE did not improve.. Counter 4/100
+Epoch: 244/1000   Training Loss: 0.045897  Test Loss: 0.084895  Test MSE: 0.084275
+Test MSE did not improve.. Counter 5/100
+Epoch: 245/1000   Training Loss: 0.046625  Test Loss: 0.088045  Test MSE: 0.087817
+Test MSE did not improve.. Counter 6/100
+Epoch: 246/1000   Training Loss: 0.044624  Test Loss: 0.088464  Test MSE: 0.088325
+Test MSE did not improve.. Counter 7/100
+Epoch: 247/1000   Training Loss: 0.046002  Test Loss: 0.088472  Test MSE: 0.089108
+Test MSE did not improve.. Counter 8/100
+Epoch: 248/1000   Training Loss: 0.047530  Test Loss: 0.083190  Test MSE: 0.084013
+Test MSE did not improve.. Counter 9/100
+Epoch: 249/1000   Training Loss: 0.047702  Test Loss: 0.080614  Test MSE: 0.080578
+Test MSE did not improve.. Counter 10/100
+Epoch: 250/1000   Training Loss: 0.042328  Test Loss: 0.084399  Test MSE: 0.084077
+Test MSE did not improve.. Counter 11/100
+Epoch: 251/1000   Training Loss: 0.042734  Test Loss: 0.092203  Test MSE: 0.092048
+Test MSE did not improve.. Counter 12/100
+Epoch: 252/1000   Training Loss: 0.043282  Test Loss: 0.084118  Test MSE: 0.084127
+Test MSE did not improve.. Counter 13/100
+Epoch: 253/1000   Training Loss: 0.042689  Test Loss: 0.080554  Test MSE: 0.081121
+Test MSE did not improve.. Counter 14/100
+Epoch: 254/1000   Training Loss: 0.043572  Test Loss: 0.082045  Test MSE: 0.082157
+Test MSE did not improve.. Counter 15/100
+Epoch: 255/1000   Training Loss: 0.039978  Test Loss: 0.079695  Test MSE: 0.079659
+Test MSE improved from 0.079813 -> 0.079659
+Epoch: 256/1000   Training Loss: 0.043686  Test Loss: 0.082031  Test MSE: 0.082738
+Test MSE did not improve.. Counter 1/100
+Epoch: 257/1000   Training Loss: 0.041221  Test Loss: 0.082203  Test MSE: 0.082426
+Test MSE did not improve.. Counter 2/100
+Epoch: 258/1000   Training Loss: 0.043823  Test Loss: 0.086296  Test MSE: 0.085700
+Test MSE did not improve.. Counter 3/100
+Epoch: 259/1000   Training Loss: 0.044038  Test Loss: 0.084528  Test MSE: 0.085069
+Test MSE did not improve.. Counter 4/100
+Epoch: 260/1000   Training Loss: 0.041481  Test Loss: 0.083676  Test MSE: 0.083672
+Test MSE did not improve.. Counter 5/100
+Epoch: 261/1000   Training Loss: 0.042188  Test Loss: 0.081166  Test MSE: 0.081485
+Test MSE did not improve.. Counter 6/100
+Epoch: 262/1000   Training Loss: 0.042661  Test Loss: 0.083546  Test MSE: 0.083130
+Test MSE did not improve.. Counter 7/100
+Epoch: 263/1000   Training Loss: 0.044833  Test Loss: 0.084551  Test MSE: 0.085184
+Test MSE did not improve.. Counter 8/100
+Epoch: 264/1000   Training Loss: 0.041455  Test Loss: 0.082721  Test MSE: 0.083165
+Test MSE did not improve.. Counter 9/100
+Epoch: 265/1000   Training Loss: 0.042534  Test Loss: 0.082348  Test MSE: 0.083304
+Test MSE did not improve.. Counter 10/100
+Epoch: 266/1000   Training Loss: 0.045262  Test Loss: 0.080648  Test MSE: 0.080773
+Test MSE did not improve.. Counter 11/100
+Epoch: 267/1000   Training Loss: 0.042488  Test Loss: 0.077048  Test MSE: 0.077932
+Test MSE improved from 0.079659 -> 0.077932
+Epoch: 268/1000   Training Loss: 0.043777  Test Loss: 0.087416  Test MSE: 0.087125
+Test MSE did not improve.. Counter 1/100
+Epoch: 269/1000   Training Loss: 0.042104  Test Loss: 0.080667  Test MSE: 0.081666
+Test MSE did not improve.. Counter 2/100
+Epoch: 270/1000   Training Loss: 0.042911  Test Loss: 0.081182  Test MSE: 0.081149
+Test MSE did not improve.. Counter 3/100
+Epoch: 271/1000   Training Loss: 0.040069  Test Loss: 0.081197  Test MSE: 0.081550
+Test MSE did not improve.. Counter 4/100
+Epoch: 272/1000   Training Loss: 0.041954  Test Loss: 0.080279  Test MSE: 0.080724
+Test MSE did not improve.. Counter 5/100
+Epoch: 273/1000   Training Loss: 0.040870  Test Loss: 0.078682  Test MSE: 0.079109
+Test MSE did not improve.. Counter 6/100
+Epoch: 274/1000   Training Loss: 0.037903  Test Loss: 0.080894  Test MSE: 0.081507
+Test MSE did not improve.. Counter 7/100
+Epoch: 275/1000   Training Loss: 0.040695  Test Loss: 0.079821  Test MSE: 0.080313
+Test MSE did not improve.. Counter 8/100
+Epoch: 276/1000   Training Loss: 0.041962  Test Loss: 0.082170  Test MSE: 0.082754
+Test MSE did not improve.. Counter 9/100
+Epoch: 277/1000   Training Loss: 0.039133  Test Loss: 0.084810  Test MSE: 0.085300
+Test MSE did not improve.. Counter 10/100
+Epoch: 278/1000   Training Loss: 0.039007  Test Loss: 0.085925  Test MSE: 0.086061
+Test MSE did not improve.. Counter 11/100
+Epoch: 279/1000   Training Loss: 0.041293  Test Loss: 0.083034  Test MSE: 0.083408
+Test MSE did not improve.. Counter 12/100
+Epoch: 280/1000   Training Loss: 0.039911  Test Loss: 0.082117  Test MSE: 0.081638
+Test MSE did not improve.. Counter 13/100
+Epoch: 281/1000   Training Loss: 0.041545  Test Loss: 0.081098  Test MSE: 0.080737
+Test MSE did not improve.. Counter 14/100
+Epoch: 282/1000   Training Loss: 0.040683  Test Loss: 0.079676  Test MSE: 0.079810
+Test MSE did not improve.. Counter 15/100
+Epoch: 283/1000   Training Loss: 0.039995  Test Loss: 0.078681  Test MSE: 0.079257
+Test MSE did not improve.. Counter 16/100
+Epoch: 284/1000   Training Loss: 0.041088  Test Loss: 0.083024  Test MSE: 0.083415
+Test MSE did not improve.. Counter 17/100
+Epoch: 285/1000   Training Loss: 0.039781  Test Loss: 0.081856  Test MSE: 0.081700
+Test MSE did not improve.. Counter 18/100
+Epoch: 286/1000   Training Loss: 0.042401  Test Loss: 0.090790  Test MSE: 0.090525
+Test MSE did not improve.. Counter 19/100
+Epoch: 287/1000   Training Loss: 0.041595  Test Loss: 0.082020  Test MSE: 0.082366
+Test MSE did not improve.. Counter 20/100
+Epoch: 288/1000   Training Loss: 0.041460  Test Loss: 0.083021  Test MSE: 0.082346
+Test MSE did not improve.. Counter 21/100
+Epoch: 289/1000   Training Loss: 0.041601  Test Loss: 0.082408  Test MSE: 0.082672
+Test MSE did not improve.. Counter 22/100
+Epoch: 290/1000   Training Loss: 0.041792  Test Loss: 0.084076  Test MSE: 0.084038
+Test MSE did not improve.. Counter 23/100
+Epoch: 291/1000   Training Loss: 0.041796  Test Loss: 0.081868  Test MSE: 0.082258
+Test MSE did not improve.. Counter 24/100
+Epoch: 292/1000   Training Loss: 0.038983  Test Loss: 0.082912  Test MSE: 0.083770
+Test MSE did not improve.. Counter 25/100
+Epoch: 293/1000   Training Loss: 0.039237  Test Loss: 0.084453  Test MSE: 0.084810
+Test MSE did not improve.. Counter 26/100
+Epoch: 294/1000   Training Loss: 0.038990  Test Loss: 0.078975  Test MSE: 0.079517
+Test MSE did not improve.. Counter 27/100
+Epoch: 295/1000   Training Loss: 0.039411  Test Loss: 0.085187  Test MSE: 0.085210
+Test MSE did not improve.. Counter 28/100
+Epoch: 296/1000   Training Loss: 0.041012  Test Loss: 0.079619  Test MSE: 0.079815
+Test MSE did not improve.. Counter 29/100
+Epoch: 297/1000   Training Loss: 0.039330  Test Loss: 0.083445  Test MSE: 0.083309
+Test MSE did not improve.. Counter 30/100
+Epoch: 298/1000   Training Loss: 0.038966  Test Loss: 0.079206  Test MSE: 0.079838
+Test MSE did not improve.. Counter 31/100
+Epoch: 299/1000   Training Loss: 0.039102  Test Loss: 0.079984  Test MSE: 0.081141
+Test MSE did not improve.. Counter 32/100
+Epoch: 300/1000   Training Loss: 0.040561  Test Loss: 0.083119  Test MSE: 0.082936
+Test MSE did not improve.. Counter 33/100
+Epoch: 301/1000   Training Loss: 0.040501  Test Loss: 0.083087  Test MSE: 0.083745
+Test MSE did not improve.. Counter 34/100
+Epoch: 302/1000   Training Loss: 0.039699  Test Loss: 0.080999  Test MSE: 0.081779
+Test MSE did not improve.. Counter 35/100
+Epoch: 303/1000   Training Loss: 0.040533  Test Loss: 0.081052  Test MSE: 0.081301
+Test MSE did not improve.. Counter 36/100
+Epoch: 304/1000   Training Loss: 0.039879  Test Loss: 0.081773  Test MSE: 0.082002
+Test MSE did not improve.. Counter 37/100
+Epoch: 305/1000   Training Loss: 0.037961  Test Loss: 0.086256  Test MSE: 0.086535
+Test MSE did not improve.. Counter 38/100
+Epoch: 306/1000   Training Loss: 0.040466  Test Loss: 0.083636  Test MSE: 0.083629
+Test MSE did not improve.. Counter 39/100
+Epoch: 307/1000   Training Loss: 0.039807  Test Loss: 0.079560  Test MSE: 0.080404
+Test MSE did not improve.. Counter 40/100
+Epoch: 308/1000   Training Loss: 0.037593  Test Loss: 0.084237  Test MSE: 0.084380
+Test MSE did not improve.. Counter 41/100
+Epoch: 309/1000   Training Loss: 0.040303  Test Loss: 0.083145  Test MSE: 0.083129
+Test MSE did not improve.. Counter 42/100
+Epoch: 310/1000   Training Loss: 0.039908  Test Loss: 0.083949  Test MSE: 0.084703
+Test MSE did not improve.. Counter 43/100
+Epoch: 311/1000   Training Loss: 0.037795  Test Loss: 0.082841  Test MSE: 0.082983
+Test MSE did not improve.. Counter 44/100
+Epoch: 312/1000   Training Loss: 0.038339  Test Loss: 0.083800  Test MSE: 0.084147
+Test MSE did not improve.. Counter 45/100
+Epoch: 313/1000   Training Loss: 0.037674  Test Loss: 0.083768  Test MSE: 0.084159
+Test MSE did not improve.. Counter 46/100
+Epoch: 314/1000   Training Loss: 0.038095  Test Loss: 0.087775  Test MSE: 0.087920
+Test MSE did not improve.. Counter 47/100
+Epoch: 315/1000   Training Loss: 0.038671  Test Loss: 0.085453  Test MSE: 0.085214
+Test MSE did not improve.. Counter 48/100
+Epoch: 316/1000   Training Loss: 0.037555  Test Loss: 0.078819  Test MSE: 0.079085
+Test MSE did not improve.. Counter 49/100
+Epoch: 317/1000   Training Loss: 0.037199  Test Loss: 0.080146  Test MSE: 0.080372
+Test MSE did not improve.. Counter 50/100
+Epoch: 318/1000   Training Loss: 0.036892  Test Loss: 0.083274  Test MSE: 0.083278
+Test MSE did not improve.. Counter 51/100
+Epoch: 319/1000   Training Loss: 0.038606  Test Loss: 0.078421  Test MSE: 0.079012
+Test MSE did not improve.. Counter 52/100
+Epoch: 320/1000   Training Loss: 0.037611  Test Loss: 0.080187  Test MSE: 0.080806
+Test MSE did not improve.. Counter 53/100
+Epoch: 321/1000   Training Loss: 0.037206  Test Loss: 0.079518  Test MSE: 0.080371
+Test MSE did not improve.. Counter 54/100
+Epoch: 322/1000   Training Loss: 0.038565  Test Loss: 0.077489  Test MSE: 0.077758
+Test MSE improved from 0.077932 -> 0.077758
+Epoch: 323/1000   Training Loss: 0.037894  Test Loss: 0.079498  Test MSE: 0.080142
+Test MSE did not improve.. Counter 1/100
+Epoch: 324/1000   Training Loss: 0.042352  Test Loss: 0.082919  Test MSE: 0.082953
+Test MSE did not improve.. Counter 2/100
+Epoch: 325/1000   Training Loss: 0.040775  Test Loss: 0.083935  Test MSE: 0.083934
+Test MSE did not improve.. Counter 3/100
+Epoch: 326/1000   Training Loss: 0.038907  Test Loss: 0.083108  Test MSE: 0.082892
+Test MSE did not improve.. Counter 4/100
+Epoch: 327/1000   Training Loss: 0.037100  Test Loss: 0.086678  Test MSE: 0.086766
+Test MSE did not improve.. Counter 5/100
+Epoch: 328/1000   Training Loss: 0.038632  Test Loss: 0.082950  Test MSE: 0.083563
+Test MSE did not improve.. Counter 6/100
+Epoch: 329/1000   Training Loss: 0.038577  Test Loss: 0.086499  Test MSE: 0.086331
+Test MSE did not improve.. Counter 7/100
+Epoch: 330/1000   Training Loss: 0.038333  Test Loss: 0.081574  Test MSE: 0.082185
+Test MSE did not improve.. Counter 8/100
+Epoch: 331/1000   Training Loss: 0.039099  Test Loss: 0.079393  Test MSE: 0.079559
+Test MSE did not improve.. Counter 9/100
+Epoch: 332/1000   Training Loss: 0.039559  Test Loss: 0.080690  Test MSE: 0.080296
+Test MSE did not improve.. Counter 10/100
+Epoch: 333/1000   Training Loss: 0.036852  Test Loss: 0.083918  Test MSE: 0.083953
+Test MSE did not improve.. Counter 11/100
+Epoch: 334/1000   Training Loss: 0.036072  Test Loss: 0.080908  Test MSE: 0.080635
+Test MSE did not improve.. Counter 12/100
+Epoch: 335/1000   Training Loss: 0.037218  Test Loss: 0.085460  Test MSE: 0.084812
+Test MSE did not improve.. Counter 13/100
+Epoch: 336/1000   Training Loss: 0.038510  Test Loss: 0.081434  Test MSE: 0.080681
+Test MSE did not improve.. Counter 14/100
+Epoch: 337/1000   Training Loss: 0.038024  Test Loss: 0.082712  Test MSE: 0.082113
+Test MSE did not improve.. Counter 15/100
+Epoch: 338/1000   Training Loss: 0.037753  Test Loss: 0.086100  Test MSE: 0.085812
+Test MSE did not improve.. Counter 16/100
+Epoch: 339/1000   Training Loss: 0.037057  Test Loss: 0.076256  Test MSE: 0.076270
+Test MSE improved from 0.077758 -> 0.076270
+Epoch: 340/1000   Training Loss: 0.036133  Test Loss: 0.080343  Test MSE: 0.080336
+Test MSE did not improve.. Counter 1/100
+Epoch: 341/1000   Training Loss: 0.039641  Test Loss: 0.082121  Test MSE: 0.082109
+Test MSE did not improve.. Counter 2/100
+Epoch: 342/1000   Training Loss: 0.036994  Test Loss: 0.077112  Test MSE: 0.077357
+Test MSE did not improve.. Counter 3/100
+Epoch: 343/1000   Training Loss: 0.037418  Test Loss: 0.083218  Test MSE: 0.083001
+Test MSE did not improve.. Counter 4/100
+Epoch: 344/1000   Training Loss: 0.037244  Test Loss: 0.079874  Test MSE: 0.079684
+Test MSE did not improve.. Counter 5/100
+Epoch: 345/1000   Training Loss: 0.035781  Test Loss: 0.078560  Test MSE: 0.078413
+Test MSE did not improve.. Counter 6/100
+Epoch: 346/1000   Training Loss: 0.035811  Test Loss: 0.081231  Test MSE: 0.080562
+Test MSE did not improve.. Counter 7/100
+Epoch: 347/1000   Training Loss: 0.036961  Test Loss: 0.080825  Test MSE: 0.080594
+Test MSE did not improve.. Counter 8/100
+Epoch: 348/1000   Training Loss: 0.036541  Test Loss: 0.080063  Test MSE: 0.080155
+Test MSE did not improve.. Counter 9/100
+Epoch: 349/1000   Training Loss: 0.035288  Test Loss: 0.084492  Test MSE: 0.084331
+Test MSE did not improve.. Counter 10/100
+Epoch: 350/1000   Training Loss: 0.035788  Test Loss: 0.080515  Test MSE: 0.080593
+Test MSE did not improve.. Counter 11/100
+Epoch: 351/1000   Training Loss: 0.036037  Test Loss: 0.079237  Test MSE: 0.079314
+Test MSE did not improve.. Counter 12/100
+Epoch: 352/1000   Training Loss: 0.036628  Test Loss: 0.081314  Test MSE: 0.081375
+Test MSE did not improve.. Counter 13/100
+Epoch: 353/1000   Training Loss: 0.038032  Test Loss: 0.081304  Test MSE: 0.081665
+Test MSE did not improve.. Counter 14/100
+Epoch: 354/1000   Training Loss: 0.038103  Test Loss: 0.083790  Test MSE: 0.083948
+Test MSE did not improve.. Counter 15/100
+Epoch: 355/1000   Training Loss: 0.038715  Test Loss: 0.089311  Test MSE: 0.089337
+Test MSE did not improve.. Counter 16/100
+Epoch: 356/1000   Training Loss: 0.036596  Test Loss: 0.082492  Test MSE: 0.082467
+Test MSE did not improve.. Counter 17/100
+Epoch: 357/1000   Training Loss: 0.039402  Test Loss: 0.080796  Test MSE: 0.080643
+Test MSE did not improve.. Counter 18/100
+Epoch: 358/1000   Training Loss: 0.037287  Test Loss: 0.079292  Test MSE: 0.080312
+Test MSE did not improve.. Counter 19/100
+Epoch: 359/1000   Training Loss: 0.037087  Test Loss: 0.081562  Test MSE: 0.081685
+Test MSE did not improve.. Counter 20/100
+Epoch: 360/1000   Training Loss: 0.036131  Test Loss: 0.083770  Test MSE: 0.083099
+Test MSE did not improve.. Counter 21/100
+Epoch: 361/1000   Training Loss: 0.036330  Test Loss: 0.084702  Test MSE: 0.084969
+Test MSE did not improve.. Counter 22/100
+Epoch: 362/1000   Training Loss: 0.037705  Test Loss: 0.084562  Test MSE: 0.085623
+Test MSE did not improve.. Counter 23/100
+Epoch: 363/1000   Training Loss: 0.036277  Test Loss: 0.078341  Test MSE: 0.078426
+Test MSE did not improve.. Counter 24/100
+Epoch: 364/1000   Training Loss: 0.036942  Test Loss: 0.085724  Test MSE: 0.086470
+Test MSE did not improve.. Counter 25/100
+Epoch: 365/1000   Training Loss: 0.036050  Test Loss: 0.080088  Test MSE: 0.079679
+Test MSE did not improve.. Counter 26/100
+Epoch: 366/1000   Training Loss: 0.036344  Test Loss: 0.081711  Test MSE: 0.082158
+Test MSE did not improve.. Counter 27/100
+Epoch: 367/1000   Training Loss: 0.034439  Test Loss: 0.078009  Test MSE: 0.077926
+Test MSE did not improve.. Counter 28/100
+Epoch: 368/1000   Training Loss: 0.036772  Test Loss: 0.078632  Test MSE: 0.078543
+Test MSE did not improve.. Counter 29/100
+Epoch: 369/1000   Training Loss: 0.034444  Test Loss: 0.082669  Test MSE: 0.083059
+Test MSE did not improve.. Counter 30/100
+Epoch: 370/1000   Training Loss: 0.035059  Test Loss: 0.081580  Test MSE: 0.081921
+Test MSE did not improve.. Counter 31/100
+Epoch: 371/1000   Training Loss: 0.036570  Test Loss: 0.083334  Test MSE: 0.083056
+Test MSE did not improve.. Counter 32/100
+Epoch: 372/1000   Training Loss: 0.036172  Test Loss: 0.087143  Test MSE: 0.087157
+Test MSE did not improve.. Counter 33/100
+Epoch: 373/1000   Training Loss: 0.035457  Test Loss: 0.081412  Test MSE: 0.081671
+Test MSE did not improve.. Counter 34/100
+Epoch: 374/1000   Training Loss: 0.036930  Test Loss: 0.078817  Test MSE: 0.078490
+Test MSE did not improve.. Counter 35/100
+Epoch: 375/1000   Training Loss: 0.037717  Test Loss: 0.080643  Test MSE: 0.081468
+Test MSE did not improve.. Counter 36/100
+Epoch: 376/1000   Training Loss: 0.036031  Test Loss: 0.078353  Test MSE: 0.077820
+Test MSE did not improve.. Counter 37/100
+Epoch: 377/1000   Training Loss: 0.035357  Test Loss: 0.084439  Test MSE: 0.084855
+Test MSE did not improve.. Counter 38/100
+Epoch: 378/1000   Training Loss: 0.034812  Test Loss: 0.082389  Test MSE: 0.082469
+Test MSE did not improve.. Counter 39/100
+Epoch: 379/1000   Training Loss: 0.035692  Test Loss: 0.080685  Test MSE: 0.080721
+Test MSE did not improve.. Counter 40/100
+Epoch: 380/1000   Training Loss: 0.035969  Test Loss: 0.084125  Test MSE: 0.084531
+Test MSE did not improve.. Counter 41/100
+Epoch: 381/1000   Training Loss: 0.036777  Test Loss: 0.089707  Test MSE: 0.089867
+Test MSE did not improve.. Counter 42/100
+Epoch: 382/1000   Training Loss: 0.034469  Test Loss: 0.084157  Test MSE: 0.083816
+Test MSE did not improve.. Counter 43/100
+Epoch: 383/1000   Training Loss: 0.035494  Test Loss: 0.081398  Test MSE: 0.081637
+Test MSE did not improve.. Counter 44/100
+Epoch: 384/1000   Training Loss: 0.035719  Test Loss: 0.079565  Test MSE: 0.079625
+Test MSE did not improve.. Counter 45/100
+Epoch: 385/1000   Training Loss: 0.035048  Test Loss: 0.082390  Test MSE: 0.082693
+Test MSE did not improve.. Counter 46/100
+Epoch: 386/1000   Training Loss: 0.037156  Test Loss: 0.084299  Test MSE: 0.083699
+Test MSE did not improve.. Counter 47/100
+Epoch: 387/1000   Training Loss: 0.035767  Test Loss: 0.080405  Test MSE: 0.080628
+Test MSE did not improve.. Counter 48/100
+Epoch: 388/1000   Training Loss: 0.037180  Test Loss: 0.082048  Test MSE: 0.082046
+Test MSE did not improve.. Counter 49/100
+Epoch: 389/1000   Training Loss: 0.035553  Test Loss: 0.077664  Test MSE: 0.078596
+Test MSE did not improve.. Counter 50/100
+Epoch: 390/1000   Training Loss: 0.034016  Test Loss: 0.078779  Test MSE: 0.079474
+Test MSE did not improve.. Counter 51/100
+Epoch: 391/1000   Training Loss: 0.034744  Test Loss: 0.082689  Test MSE: 0.083606
+Test MSE did not improve.. Counter 52/100
+Epoch: 392/1000   Training Loss: 0.035846  Test Loss: 0.080077  Test MSE: 0.079979
+Test MSE did not improve.. Counter 53/100
+Epoch: 393/1000   Training Loss: 0.035195  Test Loss: 0.083218  Test MSE: 0.083350
+Test MSE did not improve.. Counter 54/100
+Epoch: 394/1000   Training Loss: 0.035316  Test Loss: 0.084824  Test MSE: 0.084694
+Test MSE did not improve.. Counter 55/100
+Epoch: 395/1000   Training Loss: 0.035014  Test Loss: 0.083385  Test MSE: 0.082905
+Test MSE did not improve.. Counter 56/100
+Epoch: 396/1000   Training Loss: 0.034830  Test Loss: 0.079409  Test MSE: 0.079379
+Test MSE did not improve.. Counter 57/100
+Epoch: 397/1000   Training Loss: 0.035762  Test Loss: 0.085486  Test MSE: 0.085449
+Test MSE did not improve.. Counter 58/100
+Epoch: 398/1000   Training Loss: 0.036424  Test Loss: 0.082796  Test MSE: 0.082478
+Test MSE did not improve.. Counter 59/100
+Epoch: 399/1000   Training Loss: 0.036225  Test Loss: 0.082201  Test MSE: 0.082416
+Test MSE did not improve.. Counter 60/100
+Epoch: 400/1000   Training Loss: 0.036293  Test Loss: 0.080846  Test MSE: 0.080209
+Test MSE did not improve.. Counter 61/100
+Epoch: 401/1000   Training Loss: 0.035327  Test Loss: 0.081985  Test MSE: 0.082438
+Test MSE did not improve.. Counter 62/100
+Epoch: 402/1000   Training Loss: 0.035181  Test Loss: 0.082714  Test MSE: 0.083070
+Test MSE did not improve.. Counter 63/100
+Epoch: 403/1000   Training Loss: 0.034839  Test Loss: 0.080472  Test MSE: 0.080300
+Test MSE did not improve.. Counter 64/100
+Epoch: 404/1000   Training Loss: 0.036522  Test Loss: 0.082170  Test MSE: 0.082990
+Test MSE did not improve.. Counter 65/100
+Epoch: 405/1000   Training Loss: 0.035874  Test Loss: 0.082771  Test MSE: 0.082682
+Test MSE did not improve.. Counter 66/100
+Epoch: 406/1000   Training Loss: 0.034854  Test Loss: 0.084076  Test MSE: 0.083804
+Test MSE did not improve.. Counter 67/100
+Epoch: 407/1000   Training Loss: 0.034812  Test Loss: 0.079522  Test MSE: 0.079574
+Test MSE did not improve.. Counter 68/100
+Epoch: 408/1000   Training Loss: 0.034991  Test Loss: 0.083421  Test MSE: 0.083188
+Test MSE did not improve.. Counter 69/100
+Epoch: 409/1000   Training Loss: 0.034773  Test Loss: 0.079087  Test MSE: 0.079096
+Test MSE did not improve.. Counter 70/100
+Epoch: 410/1000   Training Loss: 0.036361  Test Loss: 0.081715  Test MSE: 0.082230
+Test MSE did not improve.. Counter 71/100
+Epoch: 411/1000   Training Loss: 0.035360  Test Loss: 0.087437  Test MSE: 0.087365
+Test MSE did not improve.. Counter 72/100
+Epoch: 412/1000   Training Loss: 0.036737  Test Loss: 0.087223  Test MSE: 0.087230
+Test MSE did not improve.. Counter 73/100
+Epoch: 413/1000   Training Loss: 0.036657  Test Loss: 0.078359  Test MSE: 0.078088
+Test MSE did not improve.. Counter 74/100
+Epoch: 414/1000   Training Loss: 0.035622  Test Loss: 0.084907  Test MSE: 0.085833
+Test MSE did not improve.. Counter 75/100
+Epoch: 415/1000   Training Loss: 0.033086  Test Loss: 0.076343  Test MSE: 0.076700
+Test MSE did not improve.. Counter 76/100
+Epoch: 416/1000   Training Loss: 0.034332  Test Loss: 0.083813  Test MSE: 0.084221
+Test MSE did not improve.. Counter 77/100
+Epoch: 417/1000   Training Loss: 0.034438  Test Loss: 0.077879  Test MSE: 0.077777
+Test MSE did not improve.. Counter 78/100
+Epoch: 418/1000   Training Loss: 0.034039  Test Loss: 0.080690  Test MSE: 0.080185
+Test MSE did not improve.. Counter 79/100
+Epoch: 419/1000   Training Loss: 0.037717  Test Loss: 0.080945  Test MSE: 0.081139
+Test MSE did not improve.. Counter 80/100
+Epoch: 420/1000   Training Loss: 0.035009  Test Loss: 0.084777  Test MSE: 0.084300
+Test MSE did not improve.. Counter 81/100
+Epoch: 421/1000   Training Loss: 0.033483  Test Loss: 0.085545  Test MSE: 0.085473
+Test MSE did not improve.. Counter 82/100
+Epoch: 422/1000   Training Loss: 0.036493  Test Loss: 0.080257  Test MSE: 0.080218
+Test MSE did not improve.. Counter 83/100
+Epoch: 423/1000   Training Loss: 0.034049  Test Loss: 0.087502  Test MSE: 0.087127
+Test MSE did not improve.. Counter 84/100
+Epoch: 424/1000   Training Loss: 0.033642  Test Loss: 0.084030  Test MSE: 0.083938
+Test MSE did not improve.. Counter 85/100
+Epoch: 425/1000   Training Loss: 0.034796  Test Loss: 0.082743  Test MSE: 0.081954
+Test MSE did not improve.. Counter 86/100
+Epoch: 426/1000   Training Loss: 0.036441  Test Loss: 0.083045  Test MSE: 0.083107
+Test MSE did not improve.. Counter 87/100
+Epoch: 427/1000   Training Loss: 0.035129  Test Loss: 0.083850  Test MSE: 0.084044
+Test MSE did not improve.. Counter 88/100
+Epoch: 428/1000   Training Loss: 0.034586  Test Loss: 0.081574  Test MSE: 0.081903
+Test MSE did not improve.. Counter 89/100
+Epoch: 429/1000   Training Loss: 0.034380  Test Loss: 0.081102  Test MSE: 0.081864
+Test MSE did not improve.. Counter 90/100
+Epoch: 430/1000   Training Loss: 0.033787  Test Loss: 0.080298  Test MSE: 0.079952
+Test MSE did not improve.. Counter 91/100
+Epoch: 431/1000   Training Loss: 0.032427  Test Loss: 0.081821  Test MSE: 0.082411
+Test MSE did not improve.. Counter 92/100
+Epoch: 432/1000   Training Loss: 0.033635  Test Loss: 0.079785  Test MSE: 0.080313
+Test MSE did not improve.. Counter 93/100
+Epoch: 433/1000   Training Loss: 0.033039  Test Loss: 0.080210  Test MSE: 0.079963
+Test MSE did not improve.. Counter 94/100
+Epoch: 434/1000   Training Loss: 0.032811  Test Loss: 0.081537  Test MSE: 0.082302
+Test MSE did not improve.. Counter 95/100
+Epoch: 435/1000   Training Loss: 0.032460  Test Loss: 0.080106  Test MSE: 0.079840
+Test MSE did not improve.. Counter 96/100
+Epoch: 436/1000   Training Loss: 0.034187  Test Loss: 0.084860  Test MSE: 0.085149
+Test MSE did not improve.. Counter 97/100
+Epoch: 437/1000   Training Loss: 0.032703  Test Loss: 0.084898  Test MSE: 0.084367
+Test MSE did not improve.. Counter 98/100
+Epoch: 438/1000   Training Loss: 0.035366  Test Loss: 0.081388  Test MSE: 0.081467
+Test MSE did not improve.. Counter 99/100
+Epoch: 439/1000   Training Loss: 0.033060  Test Loss: 0.079473  Test MSE: 0.079698
+Test MSE did not improve.. Counter 100/100
+Epoch: 440/1000   Training Loss: 0.033859  Test Loss: 0.087383  Test MSE: 0.086845
+Test MSE did not improve.. Counter 101/100
+Early Stopped ..
+Saved loss curve to ./result/attentivefp-snn_mu_opioid_receptor_loss.png
+============== Regression Performance =================
+* MSE : 0.076270
+* RMSE: 0.276170
+* R2  : 0.804849
+* PCC : 0.897910
+* Spearman: 0.888023
+=======================================================
